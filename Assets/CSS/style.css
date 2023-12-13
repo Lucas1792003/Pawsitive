@@ -499,10 +499,10 @@ input[type="radio"]{
 }
 
 .white-shape {
-    width: 280px;
-    height: 280px; 
+    width: 260px;
+    height: 260px; 
     background: #fff; 
-    margin: 0 30px; 
+    margin: 0 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     display: flex;
