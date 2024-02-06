@@ -250,7 +250,7 @@
     font-weight: 600;
     /* margin-right: 680px; */
 }
-.home-section button {
+.home-section .Login {
     position: fixed;
     top: 5px;
     right: 10px; /* Adjust the right position for the first button */
@@ -324,7 +324,7 @@
 .home-section .popup{
     position: absolute;
     top: -150%; /*add */
-    left: 84%;
+    left: 83%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
@@ -372,12 +372,18 @@
     font-size: 15px;
     color: #333;
 }
-.home-section .popup .form .form-element .box{
+.home-section .popup .form .form-element .box,
+.home-section .popup .form .form-element .faq-box{
     border: 2px solid #ddd;
     border-radius: 10px; 
     padding: 10px;
     margin-bottom: 10px;
     background-color: #fff;
+    
+}
+.home-section .popup .form .form-element .faq-box{
+    overflow: auto;
+    max-height: 300px;
 }
 .home-section .popup .form .form-element label{
     display: block;
@@ -387,19 +393,63 @@
 }
 
 .home-section .popup .form .form-element input{
+    background-color: #f7f7f7;
     position: relative;
     top: 0;
     width: calc(100% - 12px); 
     padding: 8px;
     box-sizing: border-box;
+    outline: none;
+    
 }
-.home-section .popup .form .form-element .questions{
+/* tester */
+.home-section .popup .form .form-element .question{
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0,0,0,0.8);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-align: left; 
+    margin: 0; 
+    box-sizing: border-box;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ccc;
+    font-weight: 600;
+    transition: 0.4s;
+    cursor: pointer;
 }
+.home-section .popup .form .form-element .question i{
+    font-size: 25px;
+}
+.active, .accordion:hover{
+    background-color: #f1f7f5;
+}
+.home-section .popup .form .form-element .answer{
+    padding: 0 1rem 0.5rem 1rem;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 300px;
+    display:none;
+}
+.home-section .popup .form .form-element .answer p{
+    color: rgba(0,0,0,0.7);
+    font-size: 12px;
+    line-height: 1.4;
+
+}
+.home-section .popup .form .form-element .faq{
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.home-section .popup .form .form-element .faq.active{
+    border: none;
+}
+
+/* end */
 .page-adoption{
     min-height: 100vh;
     width: 100%;
