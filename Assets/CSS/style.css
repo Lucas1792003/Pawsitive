@@ -269,9 +269,14 @@
 }
 
 .home-section button:first-child {
-    right: calc(9%); 
+    right: 14%; /* Adjust the right position for smaller screens */
 }
-
+@media (min-width: 1200px) {
+    /* First button styles for larger screens */
+    .home-section button:first-child {
+        right: calc(11%); /* Adjust the right position for larger screens */
+    }
+}
 .page-adoption{
     min-height: 100vh;
     width: 100%;
