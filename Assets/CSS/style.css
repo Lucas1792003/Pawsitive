@@ -216,7 +216,7 @@
 .home-section{
     position: relative;
     
-    background: #e1dfdf;
+    background: #ffffff;
     height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -227,18 +227,20 @@
     width: calc(100% - 78px);
 }
 .home-section .home-content{
+    
     height: 60px;
     display: flex;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: #fff;
+    background-color: #fdfcfc;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
-    color: #11101d;
+    color: #2c2626;
     font-size: 35px;
 }
 .home-section .home-content .bx-menu{
@@ -252,7 +254,7 @@
 }
 .home-section .Login {
     position: fixed;
-    top: 5px;
+    top: 10px;
     right: 10px; /* Adjust the right position for the first button */
     font-size: 12px;
     font-weight: 600;
@@ -278,7 +280,8 @@
     }
 }
 .home-section input{
-    background-color: #e6e4e4;
+    background-color: #f1f1f1;
+    /* background: #fff; */
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
@@ -288,14 +291,14 @@
     box-shadow: #000 0px 0px 3px;
     /* Adjust the position */
     position: relative;
-    top: 60px;
-    right: 0%;
+    /* top: 60px; */
+    right: -10%;
 }
 .home-section .home-content .bx-filter-alt{
     position: relative;
     margin: 0 15px; 
-    top: 60px;
-    right: 0%;
+    /* top: 60px; */
+    right: -10%;
     font-size: 25px;
     color: #565659;
     cursor: pointer;
@@ -322,9 +325,9 @@
 }
 /* start */
 .home-section .popup{
-    position: absolute;
+    position: fixed;
     top: -150%; /*add */
-    left: 83%;
+    left: 85%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
@@ -378,7 +381,7 @@
     border-radius: 10px; 
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #ebebeb;
     
 }
 .home-section .popup .form .form-element .faq-box{
@@ -396,6 +399,7 @@
     background-color: #f7f7f7;
     position: relative;
     top: 0;
+    right: -10px;
     width: calc(100% - 12px); 
     padding: 8px;
     box-sizing: border-box;
@@ -509,11 +513,14 @@
     padding: 30px;
     border-radius: 24px;
     transition: all 0.4s ease;
+    box-shadow: #000 0px 0px 3px;
 }
-.page-adoption .main-card .cards .card:hover{
+.page-adoption .main-card .cards .card:hover,
+.home-section .search-container .card-container:hover{
     transform: translateY(-15px);
 }
-.page-adoption .cards .card .content .img{
+.page-adoption .cards .card .content .img,
+.home-section .search-container .card-container .content .img{
     height: 130px;
     width: 130px;
     margin-bottom: 14px;
@@ -523,7 +530,8 @@
     border-radius: 10%;
     
 }
-.page-adoption .card .content .img img{
+.page-adoption .card .content .img img,
+.home-section .search-container .card-container .content .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -531,16 +539,19 @@
     /* background: #fff; */
     border: 3px soild #fff; 
 }
-.page-adoption .card .content .details .name{
+.page-adoption .card .content .details .name,
+.home-section .search-container .card-container .content .details .name{    
     font-size: 20px;
     font-weight: 500;
     color: #000;
 }
-.page-adoption .card .content .details .gender{
+.page-adoption .card .content .details .gender,
+.home-section .search-container .card-container .content .details .gender{
     font-size: 20px;
     color: #ff676d;
 }
-.page-adoption .cards .card .content{
+.page-adoption .cards .card .content,
+.home-section .search-container .card-container .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -581,7 +592,8 @@
 #oneB:checked ~ .button label.two {
     width: 15px;
 }
-.page-adoption .button1{
+.page-adoption .button1,
+.home-section .search-container .button1{
     position: relative;
     border: none;
     font-size: 16px;
@@ -593,7 +605,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.page-adoption .button1:hover{
+.page-adoption .button1:hover,
+.home-section .search-container .button1:hover{
     background: #265DF2;
 }
 input[type="radio"]{
@@ -733,8 +746,105 @@ input[type="radio"]{
     font-weight: 500;
     color: #000;
 }
+/* style for search page continue */
+.home-section .search-container{
+    position: absolute;
+    top: 90px;
+    transition: all 0.5s ease; 
+}
+.home-section .search-container .card-container {
+    width: calc(90% - 20px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+.home-section .search-container .card-container .content{
+    background: #fff;
+    width: calc(25% - 20px);
+    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
+    padding: 30px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 3px #000;
+}
+.home-section .search-container .card-container .content:hover {
+    transform: scale(1.05); 
+}
+.home-section .filter {
+    background-color: #fefefe;
+    position: fixed;
+    border-radius: 15px;
+    width: 35%;
+    height: 80%;
+    top: 10%;
+    left: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+}
+
+.home-section .filter .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* .home-section .filter-box {
+    max-width: 300px;
+} */
+
+/* .home-section .filter-section {
+    margin-bottom: 20px;
+}
+
+.home-section .filter-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-section .line-separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.home-section .filter-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.home-section .filter-content {
+    margin-bottom: 10px;
+}
+
+.home-section .horizontal-bar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.home-section .filter-sub-sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.home-section .filter-sub-sub-content {
+    margin-left: 15px;
+}
 
 
+.home-section input[type="checkbox"] {
+    margin-right: 5px;
+} */
 
 
 
