@@ -279,7 +279,8 @@
         right: calc(11%); /* Adjust the right position for larger screens */
     }
 }
-.home-section input{
+.home-section .box input,
+.home-section .text-input{
     background-color: #f1f1f1;
     /* background: #fff; */
     border: none;
@@ -298,10 +299,12 @@
     position: relative;
     margin: 0 15px; 
     left: 270%;
+    /* top: 30%; */
     font-size: 25px;
     color: #565659;
     cursor: pointer;
 }
+
 .home-section .faq-button{
     position: fixed;
     bottom: 20px;
@@ -375,7 +378,8 @@
     color: #333;
 }
 .home-section .popup .form .form-element .box,
-.home-section .popup .form .form-element .faq-box{
+.home-section .popup .form .form-element .faq-box,
+.home-section .filter .filter-shape .filter-box{
     border: 2px solid #ddd;
     border-radius: 10px; 
     padding: 10px;
@@ -383,7 +387,8 @@
     background-color: #ebebeb;
     
 }
-.home-section .popup .form .form-element .faq-box{
+.home-section .popup .form .form-element .faq-box,
+.home-section .filter .filter-shape .filter-box{
     overflow: auto;
     max-height: 300px;
 }
@@ -398,7 +403,7 @@
     background-color: #f7f7f7;
     position: relative;
     top: 0;
-    right: -10px;
+    right: -5px;
     width: calc(100% - 12px); 
     padding: 8px;
     box-sizing: border-box;
@@ -406,7 +411,8 @@
     
 }
 /* tester */
-.home-section .popup .form .form-element .question{
+.home-section .popup .form .form-element .question,
+.home-section .filter .filter-shape .filter-box .question{
     font-size: 14px;
     background-color: rgb(255, 255, 255);
     color: rgba(0,0,0,0.8);
@@ -424,31 +430,36 @@
     transition: 0.4s;
     cursor: pointer;
 }
-.home-section .popup .form .form-element .question i{
+.home-section .popup .form .form-element .question i,
+.home-section .filter .filter-shape .filter-box .question i{
     font-size: 25px;
 }
 .active, .accordion:hover{
     background-color: #f1f7f5;
 }
-.home-section .popup .form .form-element .answer{
+.home-section .popup .form .form-element .answer,
+.home-section .filter .filter-shape .filter-box .answer{
     padding: 0 1rem 0.5rem 1rem;
     background-color: #fff;
     overflow: hidden;
-    max-height: 300px;
+    max-height: auto;
     display:none;
 }
-.home-section .popup .form .form-element .answer p{
+.home-section .popup .form .form-element .answer p,
+.home-section .filter .filter-shape .filter-box .answer p{
     color: rgba(0,0,0,0.7);
     font-size: 12px;
     line-height: 1.4;
 
 }
-.home-section .popup .form .form-element .faq{
+.home-section .popup .form .form-element .faq,
+.home-section .filter .filter-shape .filter-box .filter-sub-sub-title{
     border: 1px solid rgba(0,0,0,0.2);
     margin: 10px 0;
     border-radius: 5px;
 }
-.home-section .popup .form .form-element .faq.active{
+.home-section .popup .form .form-element .faq.active,
+.home-section .filter .filter-shape .filter-box .filter-sub-sub-title.active{
     border: none;
 }
 
@@ -775,7 +786,7 @@ input[type="radio"]{
     position: fixed;
     border-radius: 15px;
     width: 35%;
-    height: 80%;
+    height: auto;
     top: -150%;
     left: 78%;
     opacity: 0;
@@ -790,7 +801,7 @@ input[type="radio"]{
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
 }
-.home-section .filter-box{
+.home-section .filter-shape{
     margin-top: 20px;
 }
 .home-section .filter .close-btn {
@@ -806,10 +817,6 @@ input[type="radio"]{
     border-radius: 15px;
     cursor: pointer;
 } 
-
-
-
-
 .home-section .filter-title {
     font-size: 18px;
     font-weight: bold;
@@ -830,12 +837,12 @@ input[type="radio"]{
 .home-section .filter-content {
     margin-bottom: 10px;
 }
-.home-section .filter-box .filter-content {
+.home-section .filter-shape .filter-content {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 20px 10px 20px;
 }
-.home-section .filter-box .filter-content button {
+.home-section .filter-shape .filter-content button{
     background-color: #fff;
     margin-right: 10px;
     width: 200px;
@@ -850,10 +857,33 @@ input[type="radio"]{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.home-section .filter-box .filter-content button:hover {
+
+.home-section .filter-shape .filter-content button:hover {
     background-color: #f0f0f0;
 }
+.home-section .filter-shape .filter-box .answer .option-input {
+    margin-left: 10px;
+    
+}
 
+.home-section .filter-shape .filter-box .answer label {
+    display: inline-block;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: #000 0px 0px 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.home-section .filter-shape .filter-box .answer label:hover {
+    background-color: #ccc;
+}
 
 
 
