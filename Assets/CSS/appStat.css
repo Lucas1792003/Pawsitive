@@ -1,0 +1,80 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+.stat-shape {
+    position: absolute;
+    top: 80px;
+    width: 97%;
+    height: 100%;
+}
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.stat-box {
+    border: 1px solid #ddd;
+    width: 100%;
+    display: flex; 
+    align-items: center;  
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+    border-radius: 8px;
+    box-shadow: #000 0px 0px 2px;
+}
+.stat-box i{
+    font-size: 60px;
+    margin-right: 10px;
+}
+.stat-box .bxs-circle-three-quarter{
+    color: orange;
+}
+
+.stat-box .bxs-message-alt-check{
+    color: green;
+}
+.stat-box .bxs-message-alt-x{
+    color: red;
+}
+
+.shop-name {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.appstat1 {
+    font-weight: bold;
+    color: green;
+}
+  
+.appstat2 {
+    font-weight: bold;
+    color: orange;
+}
+  
+.appstat3 {
+    font-weight: bold;
+    color: red;
+}
+  
+.details {
+    margin-top: 10px;
+}
+.details p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.Key, .Breed {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;  
+    font-size: 14px;
+    color: #555;
+}
+  
