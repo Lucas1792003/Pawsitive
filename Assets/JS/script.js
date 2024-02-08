@@ -48,12 +48,3 @@ document.querySelector("#show-filter").addEventListener("click", function() {
 document.querySelector(".filter .close-btn").addEventListener("click", function() {
     document.querySelector(".filter").classList.remove("active");
 });
-
-const sliderValue = document.querySelector("span");
-const inputSlider = document.querySelector("input");
-
-inputSlider.oninput = () => {
-    let value = inputSlider.value;
-    sliderValue.textContent = value;
-    console.log("Slider value changed:", value);
-};
