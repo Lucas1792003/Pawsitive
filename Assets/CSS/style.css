@@ -215,8 +215,7 @@
 }
 .home-section{
     position: relative;
-    
-    background: #ffffff;
+    background: #e1dfdf;
     height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -227,20 +226,17 @@
     width: calc(100% - 78px);
 }
 .home-section .home-content{
-    
     height: 60px;
     display: flex;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: #fdfcfc;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-
+    background-color: #fff;
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
-    color: #2c2626;
+    color: #11101d;
     font-size: 35px;
 }
 .home-section .home-content .bx-menu{
@@ -250,220 +246,7 @@
 .home-section .home-content .text{
     font-size: 26px;
     font-weight: 600;
-    /* margin-right: 680px; */
 }
-.home-section .Login {
-    position: fixed;
-    top: 10px;
-    right: 10px; /* Adjust the right position for the first button */
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #512da8;
-    color: #fff;
-    padding: 10px 25px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    z-index: 100;
-    cursor: pointer;
-}
-
-.home-section button:first-child {
-    right: 14%; /* Adjust the right position for smaller screens */
-}
-@media (min-width: 1200px) {
-    /* First button styles for larger screens */
-    .home-section button:first-child {
-        right: calc(11%); /* Adjust the right position for larger screens */
-    }
-}
-.home-section .box input,
-.home-section .text-input{
-    background-color: #f1f1f1;
-    /* background: #fff; */
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 50%;
-    box-shadow: #000 0px 0px 3px;
-    /* Adjust the position */
-    position: relative;
-    /* top: 60px; */
-    right: -10%;
-}
-.home-section .home-content .bx-filter-alt{
-    position: relative;
-    margin: 0 15px; 
-    left: 270%;
-    /* top: 30%; */
-    font-size: 25px;
-    color: #565659;
-    cursor: pointer;
-}
-
-.home-section .faq-button{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ffffff; /* Set your desired background color */
-    border-radius: 50%;
-    width: 60px; /* Adjust the width and height for your preferred size */
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-.home-section .bx-message-error{
-    font-size: 30px;
-    margin-top: 5px;
-    color: #000000;
-    cursor: pointer;
-}
-/* start */
-.home-section .popup{
-    position: fixed;
-    top: -150%; /*add */
-    left: 85%;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1.25);
-    width: 380px;
-    padding: 20px 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-    z-index: 1001;
-}
-
-.home-section .popup.active{
-    top: 60%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-}
-
-.home-section .popup .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-/* end */
-.home-section .popup .form h2{
-    margin-bottom: 10px 0px 20px;
-    margin: 0 0 20px;
-    color: #333;
-    text-align: center;
-    font-size: 25px;
-}
-.home-section .popup .form, .form-element{
-    margin-bottom: 15px;
-}
-.home-section .popup .form, .form-element .sub-title{
-    font-weight: 600;
-    font-size: 15px;
-    color: #333;
-}
-.home-section .popup .form .form-element .box,
-.home-section .popup .form .form-element .faq-box,
-.home-section .filter .filter-shape .filter-box{
-    border: 2px solid #ddd;
-    border-radius: 10px; 
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #ebebeb;
-    
-}
-.home-section .popup .form .form-element .faq-box,
-.home-section .filter .filter-shape .filter-box{
-    overflow: auto;
-    max-height: 300px;
-}
-.home-section .popup .form .form-element label{
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-.home-section .popup .form .form-element input{
-    background-color: #f7f7f7;
-    position: relative;
-    top: 0;
-    right: -5px;
-    width: calc(100% - 12px); 
-    padding: 8px;
-    box-sizing: border-box;
-    outline: none;
-    
-}
-/* tester */
-.home-section .popup .form .form-element .question,
-.home-section .filter .filter-shape .filter-box .question{
-    font-size: 14px;
-    background-color: rgb(255, 255, 255);
-    color: rgba(0,0,0,0.8);
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    text-align: left; 
-    margin: 0; 
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 600;
-    transition: 0.4s;
-    cursor: pointer;
-}
-.home-section .popup .form .form-element .question i,
-.home-section .filter .filter-shape .filter-box .question i{
-    font-size: 25px;
-}
-.active, .accordion:hover{
-    background-color: #f1f7f5;
-}
-.home-section .popup .form .form-element .answer,
-.home-section .filter .filter-shape .filter-box .answer{
-    padding: 0 1rem 0.5rem 1rem;
-    background-color: #fff;
-    overflow: hidden;
-    max-height: auto;
-    display:none;
-}
-.home-section .popup .form .form-element .answer p,
-.home-section .filter .filter-shape .filter-box .answer p{
-    color: rgba(0,0,0,0.7);
-    font-size: 12px;
-    line-height: 1.4;
-
-}
-.home-section .popup .form .form-element .faq,
-.home-section .filter .filter-shape .filter-box .filter-sub-sub-title{
-    border: 1px solid rgba(0,0,0,0.2);
-    margin: 10px 0;
-    border-radius: 5px;
-}
-.home-section .popup .form .form-element .faq.active,
-.home-section .filter .filter-shape .filter-box .filter-sub-sub-title.active{
-    border: none;
-}
-
-/* end */
 .page-adoption{
     min-height: 100vh;
     width: 100%;
@@ -473,13 +256,6 @@
     /* background: #f2f2f2; */
     position: relative;
     overflow: hidden;
-}
-.page-adoption .title{
-    font-size: 40px;
-    font-weight: 600;
-    color: #000;
-    position: relative;
-    top: -25px;
 }
 .page-adoption::before{
     content: '';
@@ -523,14 +299,11 @@
     padding: 30px;
     border-radius: 24px;
     transition: all 0.4s ease;
-    box-shadow: #000 0px 0px 3px;
 }
-.page-adoption .main-card .cards .card:hover,
-.home-section .search-container .card-container:hover{
+.page-adoption .main-card .cards .card:hover{
     transform: translateY(-15px);
 }
-.page-adoption .cards .card .content .img,
-.home-section .search-container .card-container .content .img{
+.page-adoption .cards .card .content .img{
     height: 130px;
     width: 130px;
     margin-bottom: 14px;
@@ -540,8 +313,7 @@
     border-radius: 10%;
     
 }
-.page-adoption .card .content .img img,
-.home-section .search-container .card-container .content .img img{
+.page-adoption .card .content .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -549,19 +321,16 @@
     /* background: #fff; */
     border: 3px soild #fff; 
 }
-.page-adoption .card .content .details .name,
-.home-section .search-container .card-container .content .details .name{    
+.page-adoption .card .content .details .name{
     font-size: 20px;
     font-weight: 500;
     color: #000;
 }
-.page-adoption .card .content .details .gender,
-.home-section .search-container .card-container .content .details .gender{
+.page-adoption .card .content .details .gender{
     font-size: 20px;
     color: #ff676d;
 }
-.page-adoption .cards .card .content,
-.home-section .search-container .card-container .content{
+.page-adoption .cards .card .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -602,9 +371,7 @@
 #oneB:checked ~ .button label.two {
     width: 15px;
 }
-.page-adoption .button1,
-.home-section .search-container .button1{
-    position: relative;
+.page-adoption .button1{
     border: none;
     font-size: 16px;
     color: #fff;
@@ -615,8 +382,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.page-adoption .button1:hover,
-.home-section .search-container .button1:hover{
+.page-adoption .button1:hover{
     background: #265DF2;
 }
 input[type="radio"]{
@@ -756,134 +522,9 @@ input[type="radio"]{
     font-weight: 500;
     color: #000;
 }
-/* style for search page continue */
-.home-section .search-container{
-    position: absolute;
-    top: 90px;
-    transition: all 0.5s ease; 
-}
-.home-section .search-container .card-container {
-    width: calc(90% - 20px);
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    flex-wrap: wrap; 
-}
-.home-section .search-container .card-container .content{
-    background: #fff;
-    width: calc(25% - 20px);
-    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
-    padding: 30px;
-    border-radius: 24px;
-    transition: all 0.4s ease;
-    box-shadow: 0px 0px 3px #000;
-}
-.home-section .search-container .card-container .content:hover {
-    transform: scale(1.05); 
-}
-.home-section .filter {
-    background-color: #fefefe;
-    position: fixed;
-    border-radius: 15px;
-    width: 35%;
-    height: auto;
-    top: -150%;
-    left: 78%;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1.25);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-    z-index: 1001;
-}
-.home-section .filter.active{
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-}
-.home-section .filter-shape{
-    margin-top: 20px;
-}
-.home-section .filter .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-} 
-.home-section .filter-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0px 20px 10px;
-}
 
-.home-section .line-separator {
-    border-top: 1px solid #ccc;
-    margin: 10px 0;
-}
 
-.home-section .filter-subtitle {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 10px 30px 10px 20px;
-}
 
-.home-section .filter-content {
-    margin-bottom: 10px;
-}
-.home-section .filter-shape .filter-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 20px 10px 20px;
-}
-.home-section .filter-shape .filter-content button{
-    background-color: #fff;
-    margin-right: 10px;
-    width: 200px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    padding: 5px 20px;
-    box-shadow: #000 0px 0px 3px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.home-section .filter-shape .filter-content button:hover {
-    background-color: #f0f0f0;
-}
-.home-section .filter-shape .filter-box .answer .option-input {
-    margin-left: 10px;
-    
-}
-
-.home-section .filter-shape .filter-box .answer label {
-    display: inline-block;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 5px;
-    box-shadow: #000 0px 0px 3px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    width: 200px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.home-section .filter-shape .filter-box .answer label:hover {
-    background-color: #ccc;
-}
 
 
 
