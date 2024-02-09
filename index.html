@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Seller | Pawsitive</title>
-        <link rel="stylesheet" href="Assets/CSS/style.css">
+        <link rel="stylesheet" href="Assets/CSS/productlist.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,50 +117,41 @@
         <section class="home-section">
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
-                <span class="text">Application Details</span>
+                <span class="text">Product Listings</span>
             </nav>
-        <div class = "contact_information">
-            <h2>Contact Information</h2><br>
-        </div>
-        <div class = "user_info">
-            <ul>
-                <li><a href = "#">Email: Bart04@gamil.com</a></li>
-                <li><a href = "#">Phone No: 09789128172</a></li>
-                <li><a href = "#">Address: SpringFeiled, United States Of America</a></li>
-            </ul>
-            <div class = "user-detail">
+            <div class = "search">
+                <form>
+                    <input type = "text" placeholder = "Search"name = "searchbar">
+                    <button type = "submit">
+                        <i class='bx bx-search'></i>
+                    </button>
+                    <button type = "submit">
+                        <i class='bx bx-list-ul' ></i>
+                    </button>
+                </form>
+            </div>
+            <hr>
+            <h2>Dog</h2>
+            <div class = "details">
+                
+                <img src = "Assets/Image/Samoyed (1).jpg" alt = "Samoyed">
                 <ul>
-                    <li><a href = "#">Name: Bart Simpson</a></li>
-                    <li><a href = "#">Age: 5</a></li>
-                    <li><a href = "#">Submission Date: 12/11/2019</a></li>
-                    <li><a href = "#">Animal_ID Key: cat123</a></li>
+                    <li><a href = "#">Name: Chu Chu</a></li>
+                    <li><a href = "#">Breed: Samoyed</a></li>
+                    <li><a href = "#">Listing_id 123434555</a></li>
                 </ul>
-            </div>
-            <div class = "bart">
-                <img src = "Assets/Image/bart-.png" alt = "Bart Simpson">
-            </div>
-        </div>
-        <div class = "situation">
-            <h2>Living Situation</h2><br>
-        </div>
-        <div class = "situation_info">
-            <ul>
-                <li><a href = "#">Type of Residence: Apartment</a></li>
-                <li><a href = "#">Any specific pet-related rules or restrictions in their living space: </a></li>                <li><a href = "#">Cold weather condition, Poor house.</a></li>
-            </ul>
-        </div>
-        <div class = "reason">
-            <h2>Reason For Adoption</h2>
-        </div>
-        <div class = "reason_info">
-            <ul>
-                <li><a href = "#">Why they want to adopt a pet:</a></li>
-                <li><a href = "#">Their kid want a dog</a></li>
-                <li><a href = "#">Any specific Expectations or Goals:</a></li>
-                <li><a href = "#">Want to provide a good life for the dog</a></li>
-            </ul>
-        </div>
-        </section>
-        <script src="Assets/JS/script.js"></script>
+                <button class = "open" onclick = "openForm()">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </button>
+                <div class = "form-popup" id = "myForm">
+                    <form  class = "form-container">
+                        <button type = "button" class = "more_info" onclick="window.location.href='productprofile.html'">More Info</button>
+                        <button type = "submit" class = "delete">Delete</button>
+                    </form>
+                </div>
+                
+            </div><br>
+            <hr>
+        <script src = "Assets/JS/script.js"></script>
     </body>
 </html>

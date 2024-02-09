@@ -216,7 +216,7 @@
 .home-section{
     position: relative;
     background: #e1dfdf;
-    height: 100vh;
+    height: 150vh;
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
@@ -526,5 +526,679 @@ input[type="radio"]{
 
 
 
+/* seller-application */
+.user-details1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 80px;
+    align-items: center;
+}
+.logo1 img{
+    width: 80px;
+    height: 80px;
+}
+.name1{
+    padding-right: 150px;
+}
+.name1 ul{
+    list-style-type: none;
+    width: 650px;
+}
+.name1 a{
+    text-decoration: none;
+    color: black;
+}
+.button1{
+    padding-right: 250px;
+}
+.button1 form button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+.button1 form .aprrove1{
+    background-color: green;
+    width: 100px;
+    cursor: pointer;
+}
+.button1 form .reject1{
+    background-color: red;
+    width: 100px;
+    cursor: pointer;
+}
+.user-details2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 80px;
+    align-items: center;
+}
+.user-details2 img{
+    width: 80px;
+    height: 80px;
+}
+.name2{
+    padding-right: 170px;
+}
+.name2 ul{
+    list-style-type: none;
+    width: 650px;
+}
+.name2 a{
+    text-decoration: none;
+    color: black;
+}
+.button2{
+    padding-right: 260px;
+    display: flex;
+}
+.button2 form button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+.button2 form .approve2{
+    background-color: green;
+    width: 150px;
+    /* margin-right: 10px; */
+    cursor: pointer;
+}
+/* .button2 form .bx-check-circle{
+    color: green;
+    align-items: center;
+    font-size: 10px;
+    
+} */
+.bx-check-circle{
+    color: green;
+    width: 20px;
+    font-size: 50px;
+    align-items: center;
+}
 
 
+
+.user-details3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 80px;
+    align-items: center;
+}
+.user-details3 img{
+    width: 80px;
+    height: 80px;
+}
+.name3{
+    padding-right: 170px;
+}
+.name3 ul{
+    list-style-type: none;
+    width: 650px;
+}
+.name3 a{
+    text-decoration: none;
+    color: black;
+}
+.button3{
+    padding-right: 260px;
+    display: flex;
+}
+.button3 form button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+.button3 form .reject2{
+    background-color: red;
+    width: 150px;
+    /* margin-right: 10px; */
+    cursor: pointer;
+}
+.bx-x-circle{
+    color: red;
+    width: 20px;
+    font-size: 50px;
+}
+
+
+
+
+
+/* apllication_detail */
+.contact_information{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 80px;
+    align-items: center;
+}
+.contact_information h2{
+    border-bottom: 8px solid;
+    position: absolute;
+}
+.user_info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.user_info ul{
+    list-style: none;
+}
+.user_info a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.user_info li{
+    margin: 10px 0;
+}
+.user-detail {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.user-detail li{
+    margin: 10px 0;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-right: 90px;
+}
+.bart{
+    display: flex;
+    margin-top: -20px;
+}
+.situation{
+    padding-top: 10px;
+    padding-left: 80px;
+}
+.situation_info{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.situation_info ul{
+    list-style: none;
+}
+.situation_info a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.situation_info li{
+    margin: 10px 0;
+}
+.reason{
+    padding-top: 50px;
+    padding-left: 80px;
+}
+.reason_info{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 60px;
+}
+.reason_info ul{
+    list-style: none;
+}
+.reason_info a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.reason_info li{
+    margin: 10px 0;
+}
+
+
+/* product profile */
+.product_detail{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 100px;
+}
+.product_detail img{
+    width: 350px;
+    height: 350px;
+}
+.product_info{
+    margin-left: 80px;
+}
+.product_info h2{
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+}
+.product_info ul{
+    list-style: none;
+}
+.product_info a{
+    text-decoration: none;
+    color: black;
+}
+.product_info li{
+    margin: 8px 0;
+}
+.about_product{
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.about_product p{
+    line-height: 30px;
+}
+.product_package{
+    padding-top:20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.product_package form{
+    padding-top: 20px;
+}
+.product_package a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.product_package input{
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+
+
+/* set up shop */
+.upload{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+}
+.upload input[type = "file"]{
+    display: none;
+}
+
+
+.upload label{
+    height: 300px;
+    width: 350px;
+    border-radius: 6px;
+    border: 4px solid black;
+}
+.bx-upload{
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left:310px;
+    cursor: pointer;
+}
+.upload a{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.upload-detail{
+    position: relative;
+    left: 600px;
+}
+.upload input.shop-name{
+    position: relative;
+    right: 20px;
+    border: none;
+    padding-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    margin-bottom: 10px;
+}
+.upload .shop-name::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.price{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+}
+.upload .price::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.location{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 50px;
+    padding-right: 190px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.upload .location::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.email{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    right: 20px;
+    position: relative;
+}
+.upload .email::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.phone-no{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+.upload .phone-no::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.time{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    padding-right: 40px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.upload .time::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail2{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+}
+.upload-detail2 input.about-seller{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 150px;
+    padding-right: 300px;
+}
+.upload-detail2 .about-seller::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail2 input.shop-description{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 150px;
+    padding-right: 300px;
+    margin-left: 20px;
+}
+.upload-detail2 .shop-description::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail3{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+    cursor: pointer;
+}
+.upload-detail3 button.type-of-pet{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 5px;
+    padding-right: 640px;
+
+}
+.upload-detail3 p{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.upload-detail3 i{
+    position: relative;
+    left: 765px;
+    font-size: 30px;
+    cursor: pointer;
+    bottom: 10px;
+}
+.upload-detail4{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+    cursor: pointer;
+}
+.upload-detail4 button.health-and-care{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 5px;
+    padding-right: 660px;
+}
+.upload-detail4 p{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.upload-detail4 i{
+    position: relative;
+    left: 780px;
+    font-size: 30px;
+    cursor: pointer;
+    bottom: 10px;
+
+}
+
+
+
+
+
+
+
+
+/* new listing */
+.list_upload{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+}
+.list_upload span{
+    font-size: 40px;
+    cursor: pointer;
+    padding-left: 25px;
+}
+.list_upload input[type = "file"]{
+    display: none;
+}
+.list_upload label{
+    height: 300px;
+    width: 350px;
+    border-radius: 6px;
+    border: 4px solid black;
+}
+.list_upload.bx-upload{
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left:310px;
+    cursor: pointer;
+}
+.list_upload span{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.list_upload-detail{
+    position: relative;
+    left: 600px;
+}
+.list_upload input.list_upload-name{
+    position: relative;
+    right: 20px;
+    border: none;
+    padding-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    margin-bottom: 10px;
+}
+.list_upload .list_upload-name::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.list_upload input.list_upload-price{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+}
+.list_upload .list_upload-price::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.list_upload input.list_upload-animal{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    padding-left: 2px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.list_upload .list_upload-animal::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.list_upload input.list_upload-breed{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+}
+.list_upload .list_upload-breed::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.list_upload input.list_upload-dob{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    padding-right: 30px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.list_upload h5{
+    color: black;
+    position: relative;
+    right: 15px;
+    top: 10px;
+}
+::-webkit-datetime-edit{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.select-container{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding: 15px 70px 20px 10px;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    font-weight:500;
+    cursor: pointer;
+}
+.select-container1{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding: 15px 70px 20px 5px;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    font-weight:500;
+    cursor: pointer;
+}
+.list_upload-detail1{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    align-items: center;
+}
+.list_upload-detail1 input.list_upload-description{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 150px;
+    padding-right: 780px;
+}
+.list_upload-detail1 .list_upload-description::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    top: 20px;
+    position: relative;
+}
