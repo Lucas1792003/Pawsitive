@@ -669,11 +669,27 @@ img{
     color: black;
     font-weight: bold;
     font-size: 18px;
+    margin-right: 40px;
+
+}
+.product_package input.dewormed{
+    position: relative;
+    left: 48px;
+}
+.product_package a.dewormed{
+    left: 50px;
+    position: relative;
+}
+.product_package input.checkup{
+    position: relative;
+    left: 202px;
+}
+.product_package a.checkup{
+    position: relative;
+    left: 200px;
 }
 .product_package input{
-    width: 15px;
-    margin-right: 10px;
-    margin-left: 100px;
+    margin: 10px 20px 10px 40px;
 }
 
 
@@ -1070,9 +1086,19 @@ img{
     padding-left: 50px;
     padding-right: 50px;
 }
+.homer-box{
+    border: 1px solid #fff;
+    position: relative;
+    top: 30px;
+    box-shadow: #000 0px 0px 2px;
+    border-radius: 10px;
+    height: 150px;
+}
 .app_detail-homer{
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; 
 }
 .app_detail-homer img{
     width: 100px;
@@ -1084,10 +1110,9 @@ img{
 }
 .app_detail-homer ul{
     list-style: none;
-    padding-left: 20px;
     position: relative;
+    right: 60px;
     top: 5px;
-    right: 90px;
 }
 .app_detail-homer li{
     margin: 5px 0;
@@ -1116,32 +1141,46 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+.bart-box{
+    border: 1px solid #fff;
+    position: relative;
+    top: 50px;
+    box-shadow: #000 0px 0px 2px;
+    border-radius: 10px;
+    height: 150px;
+}
 .app_detail-bart{
     display: flex;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
 }
 .app_detail-bart img{
     width: 100px;
     height: 100px;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
 }
 .app_detail-bart a{
     text-decoration: none;
     color: black;
+    position: relative;
+    left: 10px;
 }
 .app_detail-bart ul{
     list-style: none;
-    padding-left: 20px;
     position: relative;
-    top: 5px;
-    right: 90px;
+    right: 60px;
+    bottom: 15px;
 }
 .app_detail-bart li{
     margin: 5px 0;
 }
 .bart_button{
     position: relative;
-    left: 405px;
-    top: 20px;
+    left: 415px;
+    top: 10px;
 }
 .bart_button button{
     border: none;
@@ -1162,13 +1201,24 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+.lisa-box{
+    border: 1px solid #fff;
+    position: relative;
+    top: 70px;
+    box-shadow: #000 0px 0px 2px;
+    border-radius: 10px;
+    height: 150px;
+}
 .app_detail-lisa{
     display: flex;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-left: 20px; 
 }
 .app_detail-lisa img{
     width: 100px;
     height: 100px;
+    position: relative;
+    bottom: 20px;
 }
 .app_detail-lisa a{
     text-decoration: none;
@@ -1176,10 +1226,9 @@ img{
 }
 .app_detail-lisa ul{
     list-style: none;
-    padding-left: 20px;
     position: relative;
-    top: 5px;
-    right: 90px;
+    right: 60px;
+    bottom: 15px;
 }
 .app_detail-lisa li{
     margin: 5px 0;
@@ -1187,7 +1236,7 @@ img{
 .lisa_button{
     position: relative;
     left: 405px;
-    top: 20px;
+    top: 10px;
 }
 .lisa_button button{
     border: none;
