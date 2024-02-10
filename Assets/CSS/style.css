@@ -526,150 +526,6 @@ input[type="radio"]{
 
 
 
-/* seller-application */
-.user-details1{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 80px;
-    padding-top: 80px;
-    align-items: center;
-}
-.logo1 img{
-    width: 80px;
-    height: 80px;
-}
-.name1{
-    padding-right: 150px;
-}
-.name1 ul{
-    list-style-type: none;
-    width: 650px;
-}
-.name1 a{
-    text-decoration: none;
-    color: black;
-}
-.button1{
-    padding-right: 250px;
-}
-.button1 form button{
-    width: 90px;
-    height: 40px;
-    border: none;
-    color: white;
-}
-.button1 form .aprrove1{
-    background-color: green;
-    width: 100px;
-    cursor: pointer;
-}
-.button1 form .reject1{
-    background-color: red;
-    width: 100px;
-    cursor: pointer;
-}
-.user-details2{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 80px;
-    align-items: center;
-}
-.user-details2 img{
-    width: 80px;
-    height: 80px;
-}
-.name2{
-    padding-right: 170px;
-}
-.name2 ul{
-    list-style-type: none;
-    width: 650px;
-}
-.name2 a{
-    text-decoration: none;
-    color: black;
-}
-.button2{
-    padding-right: 260px;
-    display: flex;
-}
-.button2 form button{
-    width: 90px;
-    height: 40px;
-    border: none;
-    color: white;
-}
-.button2 form .approve2{
-    background-color: green;
-    width: 150px;
-    /* margin-right: 10px; */
-    cursor: pointer;
-}
-/* .button2 form .bx-check-circle{
-    color: green;
-    align-items: center;
-    font-size: 10px;
-    
-} */
-.bx-check-circle{
-    color: green;
-    width: 20px;
-    font-size: 50px;
-    align-items: center;
-}
-
-
-
-.user-details3{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 80px;
-    align-items: center;
-}
-.user-details3 img{
-    width: 80px;
-    height: 80px;
-}
-.name3{
-    padding-right: 170px;
-}
-.name3 ul{
-    list-style-type: none;
-    width: 650px;
-}
-.name3 a{
-    text-decoration: none;
-    color: black;
-}
-.button3{
-    padding-right: 260px;
-    display: flex;
-}
-.button3 form button{
-    width: 90px;
-    height: 40px;
-    border: none;
-    color: white;
-}
-.button3 form .reject2{
-    background-color: red;
-    width: 150px;
-    /* margin-right: 10px; */
-    cursor: pointer;
-}
-.bx-x-circle{
-    color: red;
-    width: 20px;
-    font-size: 50px;
-}
-
-
-
 
 
 /* apllication_detail */
@@ -1201,4 +1057,154 @@ img{
     padding-left: 20px;
     top: 20px;
     position: relative;
+}
+
+
+
+
+
+
+/* app details */
+.app_detail-container{
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.app_detail-homer{
+    display: flex;
+    padding-top: 50px;
+}
+.app_detail-homer img{
+    width: 100px;
+    height: 100px;
+}
+.app_detail-homer a{
+    text-decoration: none;
+    color: black;
+}
+.app_detail-homer ul{
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+    top: 5px;
+    right: 90px;
+}
+.app_detail-homer li{
+    margin: 5px 0;
+}
+.homer_button{
+    position: relative;
+    left: 400px;
+    top: 30px;
+}
+.homer_button button{
+    border: none;
+    border-radius: 6px;
+}
+.homer_button button.approve1{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(27, 210, 27);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.homer_button button.reject1{
+    padding: 10px 40px 10px 40px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.app_detail-bart{
+    display: flex;
+    padding-top: 30px;
+}
+.app_detail-bart img{
+    width: 100px;
+    height: 100px;
+}
+.app_detail-bart a{
+    text-decoration: none;
+    color: black;
+}
+.app_detail-bart ul{
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+    top: 5px;
+    right: 90px;
+}
+.app_detail-bart li{
+    margin: 5px 0;
+}
+.bart_button{
+    position: relative;
+    left: 405px;
+    top: 20px;
+}
+.bart_button button{
+    border: none;
+    border-radius: 6px;
+}
+.bart_button button.approve2{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(27, 210, 27);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bart_button button.reject2{
+    padding: 10px 40px 10px 40px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.app_detail-lisa{
+    display: flex;
+    padding-top: 30px;
+}
+.app_detail-lisa img{
+    width: 100px;
+    height: 100px;
+}
+.app_detail-lisa a{
+    text-decoration: none;
+    color: black;
+}
+.app_detail-lisa ul{
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+    top: 5px;
+    right: 90px;
+}
+.app_detail-lisa li{
+    margin: 5px 0;
+}
+.lisa_button{
+    position: relative;
+    left: 405px;
+    top: 20px;
+}
+.lisa_button button{
+    border: none;
+    border-radius: 6px;
+}
+.lisa_button button.approve3{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(27, 210, 27);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.lisa_button button.reject3{
+    padding: 10px 40px 10px 40px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
