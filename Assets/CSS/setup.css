@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #11101d;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.sidebar.close{
+    width: 78px;
+}
+.sidebar .logo-datails{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sidebar .logo-datails i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.sidebar .logo-datails .logo_name{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+}
+.sidebar.close .logo-datails .logo_name{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0s;
+}
+.sidebar .nav-links{
+    height: 100%;
+    padding: 30px 0 150px 0;
+    overflow: auto;
+}
+.sidebar.close .nav-links{
+    overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar{
+    display: none;
+
+}
+.sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+    background: #1d1b31;
+}
+.sidebar .nav-links li .icon_link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar.close .nav-links li .icon_link{
+    display: block;
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow{
+    transform: rotate(-180deg);
+}
+.sidebar.close .nav-links i.arrow{
+    display: none;
+}
+.sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #1d1b31;
+    display: none;
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+    display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+    opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar.close .nav-links li:hover .sub-menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+    display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+    display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+.sidebar .nav-links li .sub-menu.blank{
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .nav-links li:hover .sub-menu.blank{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sidebar .profile-details{
+    position: fixed;
+    bottom: 0;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1d1b31;
+    padding: 6px 0;
+    transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+    background: none;
+}
+.sidebar.close .profile-details{
+    width: 78px;
+}
+.sidebar .profile-details .profile-content{
+    display: flex;
+    align-items: center;
+
+}
+.sidebar .profile-details img{
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 14px 0 12px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+}
+.sidebar.close .profile-details img{
+    padding: 10px;
+}
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job{
+    display: none;
+}
+.sidebar .profile-details .job{
+    font-size: 12px;
+}
+.home-section{
+    position: relative;
+    background: #e1dfdf;
+    height: 150vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+}
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+}
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+    color: #11101d;
+    font-size: 35px;
+}
+.home-section .home-content .bx-menu{
+    margin: 0 15px; 
+    cursor: pointer;
+}
+.home-section .home-content .text{
+    font-size: 26px;
+    font-weight: 600;
+}
+.upload{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+}
+.upload input[type = "file"]{
+    display: none;
+}
+
+
+.upload label{
+    height: 300px;
+    width: 350px;
+    border-radius: 6px;
+    border: 4px solid black;
+}
+.bx-upload{
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left:310px;
+    cursor: pointer;
+}
+.upload a{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.upload-detail{
+    position: relative;
+    left: 600px;
+}
+.upload input.shop-name{
+    position: relative;
+    right: 20px;
+    border: none;
+    padding-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    margin-bottom: 10px;
+}
+.upload .shop-name::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.price{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+}
+.upload .price::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.location{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 50px;
+    padding-right: 190px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.upload .location::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.email{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    right: 20px;
+    position: relative;
+}
+.upload .email::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.phone-no{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+.upload .phone-no::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload input.time{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 30px;
+    padding-right: 40px;
+    right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.upload .time::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail2{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+}
+.upload-detail2 input.about-seller{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 150px;
+    padding-right: 300px;
+}
+.upload-detail2 .about-seller::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail2 input.shop-description{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 150px;
+    padding-right: 300px;
+    margin-left: 20px;
+}
+.upload-detail2 .shop-description::placeholder{
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+.upload-detail3{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+    cursor: pointer;
+}
+.upload-detail3 button.type-of-pet{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 5px;
+    padding-right: 640px;
+
+}
+.upload-detail3 p{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.upload-detail3 i{
+    position: relative;
+    left: 765px;
+    font-size: 30px;
+    cursor: pointer;
+    bottom: 10px;
+}
+.upload-detail4{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    align-items: center;
+    padding-right: 80px;
+    cursor: pointer;
+}
+.upload-detail4 button.health-and-care{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(190, 189, 189);
+    padding-bottom: 5px;
+    padding-right: 660px;
+}
+.upload-detail4 p{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.upload-detail4 i{
+    position: relative;
+    left: 780px;
+    font-size: 30px;
+    cursor: pointer;
+    bottom: 10px;
+
+}
