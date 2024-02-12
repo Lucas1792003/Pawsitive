@@ -219,6 +219,7 @@
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
+    background-color: white;
 }
 .sidebar.close ~ .home-section{
     left: 78px;
@@ -267,6 +268,7 @@
     font-size: 40px;
     cursor: pointer;
     padding-left: 25px;
+    color: #1c1c6b;
 }
 .list_upload input[type = "file"]{
     display: none;
@@ -277,12 +279,13 @@
     border-radius: 6px;
     border: 4px solid black;
 }
-.list_upload.bx-upload{
+.bx-upload{
     font-size: 40px;
     position: absolute;
     top: 200px;
     left:310px;
     cursor: pointer;
+    color: #1c1c6b;
 }
 .list_upload span{
     position: absolute;
@@ -294,36 +297,37 @@
 .list_upload-detail{
     position: relative;
     left: 600px;
+    bottom: 50px;
 }
 .list_upload input.list_upload-name{
     position: relative;
     right: 20px;
-    border: none;
+    border: 2px solid black;
     padding-bottom: 30px;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     margin-bottom: 10px;
 }
 .list_upload .list_upload-name::placeholder{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
     padding-left: 10px;
 }
 .list_upload input.list_upload-price{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding-bottom: 30px;
 }
 .list_upload .list_upload-price::placeholder{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
     padding-left: 10px;
 }
 .list_upload input.list_upload-animal{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding-bottom: 30px;
     padding-left: 2px;
     right: 20px;
@@ -332,24 +336,24 @@
 }
 .list_upload .list_upload-animal::placeholder{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
     padding-left: 10px;
 }
 .list_upload input.list_upload-breed{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding-bottom: 30px;
 }
 .list_upload .list_upload-breed::placeholder{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
     padding-left: 10px;
 }
 .list_upload input.list_upload-dob{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding-bottom: 30px;
     padding-right: 30px;
     right: 20px;
@@ -358,33 +362,34 @@
     margin-top: 10px;
 }
 .list_upload h5{
-    color: black;
+    color: #1c1c6b;
     position: relative;
     right: 15px;
     top: 10px;
 }
 ::-webkit-datetime-edit{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
     padding-left: 10px;
     padding-top: 10px;
     cursor: pointer;
 }
 .select-container{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding: 15px 70px 20px 10px;
     font-size: 16px;
     position: relative;
     top: 10px;
     font-weight:500;
     cursor: pointer;
+    color: #1c1c6b;
 }
 .select-container1{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding: 15px 70px 20px 5px;
     font-size: 16px;
     position: relative;
@@ -392,24 +397,247 @@
     right: 20px;
     font-weight:500;
     cursor: pointer;
+    color: #1c1c6b;
 }
 .list_upload-detail1{
     display: flex;
     width: 100%;
-    padding-top: 50px;
-    align-items: center;
+    padding-top: 100px;
+    padding-left: 150px;
 }
 .list_upload-detail1 input.list_upload-description{
-    border: none;
+    border: 2px solid black;
     border-radius: 6px;
-    background-color: rgb(190, 189, 189);
+    background-color: white;
     padding-bottom: 150px;
     padding-right: 780px;
 }
 .list_upload-detail1 .list_upload-description::placeholder{
     font-weight: bold;
-    color: black;
+    color: #1c1c6b;
+    font-size: 20px;
     padding-left: 20px;
     top: 20px;
     position: relative;
+}
+.upload-detail3{
+    display: flex;
+    padding-left: 120px;
+    padding-top: 100px;
+}
+.collapsible{
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    font-family: 500;
+}
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: white;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    z-index: 1;
+}
+.collapsible label .bx-chevron-right{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    color: black;
+    transition: all 0.3s ease;
+}
+#collapsible-head{
+    display: none;
+}
+.collapsible input:checked + label .bx-chevron-right{
+    transform: rotate(90deg);
+}
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    border: 2px solid black;
+}
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0 30px;
+    color: #1c1c6b;
+}
+.collapsible-text form{
+    padding-left: 80px;
+}
+.collapsible-text a{
+    text-decoration: none;
+    color: #1c1c6b;
+    font-weight: 600;
+}
+.train{
+    position: relative;
+    left: 100px;
+}
+.train1{
+    position: relative;
+    left: 100px;
+}
+.exercise{
+    position: relative;
+    left: 200px;
+}
+.exercise1{
+    position: relative;
+    left: 200px;
+}
+.groom{
+    position: relative;
+    left: 300px;
+}
+.groom1{
+    position: relative;
+    left: 300px;
+}
+.nutrition{
+    position: relative;
+    left: 400px;
+}
+.nutrition1{
+    position: relative;
+    left: 400px;
+}
+.upload-detail4{
+    display: flex;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+.health{
+    max-width: 1000px;
+    overflow: hidden;
+    font-weight: 500;
+    width: 100%;
+}
+.health label{
+    position: relative;
+    font-weight: 600;
+    background: white;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    z-index: 1;
+}
+.health label .bx-chevron-right{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    color: black;
+    transition: all 0.3s ease;
+}
+#health-and-care{
+    display: none;
+}
+.health input:checked + label .bx-chevron-right{
+    transform: rotate(90deg);
+}
+.health-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    border: 2px solid black;
+}
+.health input:checked ~ .health-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: white;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0
+}
+.health-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0 30px;
+    color: #1c1c6b;
+}
+.health-text form{
+    padding-left: 150px;
+    padding-right: 15px
+}
+.health-text a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.health-text .trainability{
+    position: relative;
+    left: 100px;
+}
+.health-text .trainability1{
+    position: relative;
+    left: 100px;
+}
+.health-text .sociability{
+    position: relative;
+    left: 200px;
+}
+.health-text .sociablity1{
+    position: relative;
+    left: 200px;
+}
+.health-text .loyal{
+    position: relative;
+    left: 300px;
+}
+.health-text .loyal1{
+    position: relative;
+    left: 300px;
+}
+.upload-detail5{
+    display: flex;
+    justify-content: end;
+    padding-right: 140px;
+    padding-top: 80px;
+}
+.upload-detail5 button{
+    border-radius: 6px;
+    margin-right: 20px;
+    padding: 10px 50px;
+    border: none;
+    color: #1c1c6b;
+    font-weight: 700;
+}
+.upload-detail5 button.submit{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.upload-detail5 button.cancel{
+    background-color: red;
+    cursor: pointer;
 }

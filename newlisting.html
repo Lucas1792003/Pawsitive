@@ -121,29 +121,91 @@
             </nav>
             <div class = "list_upload">
                 <input type = "file" id = "fileInput">
-                <label for = "fileInput">
+                    <label for = "fileInput">
                     <i class='bx bx-upload' ></i>
                     <span>Upload</span>
-                <div class = "list_upload-detail">
-                    <input type = "text" placeholder="Name" class = "list_upload-name">
-                    <input type = "text" placeholder="Price" class = "list_upload-price">
-                    <input type = "text" placeholder="Animal Type" class = "list_upload-animal">
-                    <input type = "text" placeholder="Breed Type" class = "list_upload-breed">
-                    <h5>DOB</h5>
-                    <input type = "date" placeholder="DOB" class = "list_upload-dob">
-                    <select class = "select-container">
-                        <option value = "">Sex</option>
-                        <option value = "male">Male</option>
-                        <option value = "female">Female</option>
-                    </select>
-                    <select class = "select-container1">
-                        <option value = "">Ready To Leave</option>
-                        <option value = "yes">Yes</option>
-                        <option value = "no">No</option>
-                    </select>
-                </div>
-                <div class = "list_upload-detail1">
-                    <input type = "text" placeholder="Description" class = "list_upload-description">
+                    <div class = "list_upload-detail">
+                        <input type = "text" placeholder="Name" class = "list_upload-name">
+                        <input type = "text" placeholder="Price" class = "list_upload-price">
+                        <input type = "text" placeholder="Animal Type" class = "list_upload-animal">
+                        <input type = "text" placeholder="Breed Type" class = "list_upload-breed">
+                        <h5>DOB</h5>
+                        <input type = "date" placeholder="DOB" class = "list_upload-dob">
+                        <select class = "select-container">
+                            <option value = "">Sex</option>
+                            <option value = "male">Male</option>
+                            <option value = "female">Female</option>
+                        </select>
+                        <select class = "select-container1">
+                            <option value = "">Ready To Leave</option>
+                            <option value = "yes">Yes</option>
+                            <option value = "no">No</option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+            <div class = "list_upload-detail1">
+                <input type = "text" placeholder="Description" class = "list_upload-description">
+            </div>
+            <div class = "upload-detail3">
+                <div class = "collapsible">
+                    <input type = "checkbox" id = "collapsible-head">
+                    <label for = "collapsible-head">Puppy Care Package
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    <div class = "collapsible-text">
+                        <h2>Services</h2>
+                        <form>
+                            <input type = "checkbox" class = "wash">
+                                <a href = "#"class = "wash1">Wash</a>
+                            </input>
+                            <input type = "checkbox" class = "train">
+                                <a href = "#"class = "train1" >Training</a>
+                            </input>
+                            <input type = "checkbox" class = 'exercise'>
+                                <a href = "#"class = "exercise1">Exercise</a>
+                            </input>
+                            <input type = "checkbox" class = "groom">
+                                <a href = "#"class = "groom1">Grooming</a>
+                            </input>
+                            <input type = "checkbox" class = "nutrition">
+                                <a href = "#"class = "nutrition1">Nutrition</a>
+                            </input>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <script src = "Assets/JS/script.js"></script>
+            <div class = "upload-detail4">
+                <div class = "health">
+                    <input type = "checkbox" id = "health-and-care">
+                    <label for = "health-and-care">Pet Characteristics And Behaviors
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    <div class = "health-text">
+                        <h2>About Pet</h2>
+                        <form>
+                            <input type = "checkbox">
+                                <a href = "#">Friendly</a>
+                            </input>
+                            <input type = "checkbox"class = "trainability">
+                                <a href = "#" class = "trainability1">Trainability</a>
+                            </input>
+                            <input type = "checkbox" class = "sociability">
+                                <a href = "#" class = "sociablity1">sociability</a>
+                            </input>
+                            <input type = "checkbox" class = "loyal">
+                                <a href = "#" class = "loyal1">Loyal</a>
+                            </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "upload-detail5">
+                <button type = "button" class= "submit">Submit</button>
+                <button type = "button" class = "cancel">Cancel</button>
+            </div>
+        </section>
+        <script src = "Assets/JS/script.js"></script>
+    </body>
+</html>
+            
