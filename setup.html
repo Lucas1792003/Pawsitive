@@ -5,6 +5,7 @@
         <title>Seller | Pawsitive</title>
         <link rel="stylesheet" href="Assets/CSS/setup.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href = "https://fonts.googlepis.com/css2?family=Monsterrat:wght@400;600&display=swap">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -140,17 +141,74 @@
                 <input type = "text" placeholder="Shop Description" class = "shop-description">
             </div>
             <div class = "upload-detail3">
-                <button class = "type-of-pet">
-                    <p>Types of Pet and Breed Offered</p>
-                    <i class = "bx bx-chevron-down"></i>
-                </button>
+                <div class = "collapsible">
+                    <input type = "checkbox" id = "collapsible-head">
+                    <label for = "collapsible-head">Pet Breed type
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    
+                    <div class = "collapsible-text">
+                        <h2>About Breed</h2>
+                        <form>
+                            <input type = "checkbox" class = "dog">
+                                <a href = "#">Dog</a>
+                            </input>
+                            <input type = "checkbox" class = "cat">
+                                <a href = "#"class = "cat1" >Cat</a>
+                            </input>
+                            <input type = "checkbox" class = 'bird'>
+                                <a href = "#"class = "bird1">Bird</a>
+                            </input>
+                            <input type = "checkbox" class = "fish">
+                                <a href = "#"class = "fish1">Fish</a>
+                            </input>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class = "upload-detail4">
+                <div class = "health">
+                    <input type = "checkbox" id = "health-and-care">
+                    <label for = "health-and-care">Health And Care Information
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    <div class = "health-text">
+                        <h2>Package</h2>
+                        <form>
+                            <input type = "checkbox">
+                                <a href = "#">Vaccinated</a>
+                            </input>
+                            <input type = "checkbox"class = "dewormed">
+                                <a href = "#" class = "dewormed">Dewormed</a>
+                            </input>
+                            <input type = "checkbox" class = "checkup">
+                                <a href = "#" class = "checkup">Veterinary Checkup Performed</a><br>
+                            </input><br>
+                            <input type = "checkbox">
+                                <a href = "#" class = "kit">Puppy Starter Kit</a>
+                            </input>
+                            <input type = "checkbox">
+                                <a href = "#"class = "social">Puppy Socialization Started</a>
+                            </input>
+                            <input type = "checkbox">
+                                <a href = "#"class = "dna">AKC DNA Profile Tested</a>
+                            </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "upload-detail5">
+                <button type = "button" class= "submit">Submit</button>
+                <button type = "button" class = "cancel">Cancel</button>
+            </div>
+            
+            
+            <!-- <div class = "upload-detail4">
                 <button class = "health-and-care">
                     <p>Health and Care Information</p>
                     <i class = "bx bx-chevron-down"></i>
                 </button>
-            </div>
+            </div> -->
         </div>
 
 
