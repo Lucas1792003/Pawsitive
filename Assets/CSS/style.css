@@ -247,15 +247,24 @@
     margin: 0 15px; 
     cursor: pointer;
 }
-.home-section .home-content .text{
-    font-size: 26px;
-    font-weight: 600;
-    /* margin-right: 680px; */
+.home-section .home-content .text {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    margin-right: 70px !important;
 }
-.home-section .Login {
+.home-section .LoginB {
+    padding-top: 10px; /* Adjust the value as needed */
+}
+.home-section .buttons-container{
+    padding: 20px;
     position: fixed;
-    top: 10px;
-    right: 10px; /* Adjust the right position for the first button */
+    right: 10px; 
+
+    
+}
+.home-section .LoginA,     
+.home-section .LoginB{
+
     font-size: 12px;
     font-weight: 600;
     background-color: #512da8;
@@ -263,43 +272,29 @@
     padding: 10px 25px;
     border: 1px solid transparent;
     border-radius: 8px;
-    font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    z-index: 100;
     cursor: pointer;
-}
-
-.home-section button:first-child {
-    right: 14%; /* Adjust the right position for smaller screens */
-}
-@media (min-width: 1200px) {
-    /* First button styles for larger screens */
-    .home-section button:first-child {
-        right: calc(11%); /* Adjust the right position for larger screens */
-    }
 }
 .home-section .box input,
 .home-section .text-input{
     background-color: #f1f1f1;
-    /* background: #fff; */
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
-    width: 50%;
+    width: 720px;
     box-shadow: #000 0px 0px 3px;
-    /* Adjust the position */
     position: relative;
-    /* top: 60px; */
     right: -10%;
 }
 .home-section .home-content .bx-filter-alt{
-    position: relative;
+    position: absolute;
     margin: 0 15px; 
-    left: 270%;
-    /* top: 30%; */
+    /* left: 75%; */
+    padding: 20px 20px 20px 65px;
+    top: 0%;
     font-size: 25px;
     color: #565659;
     cursor: pointer;
@@ -484,7 +479,7 @@
 .page-adoption::before{
     content: '';
     position: absolute;
-    top:  15%;
+    top:  10%;
     left: 5%;
     right: 5%;
     bottom: 15%;
@@ -553,12 +548,14 @@
 .home-section .search-container .card-container .content .details .name{    
     font-size: 20px;
     font-weight: 500;
-    color: #000;
+    color: #1f02fb;
 }
 .page-adoption .card .content .details .gender,
 .home-section .search-container .card-container .content .details .gender{
-    font-size: 20px;
-    color: #ff676d;
+    font-size: 14px;
+    color: #000000;
+    /* overflow: hidden;
+    max-height: 200px; */
 }
 .page-adoption .cards .card .content,
 .home-section .search-container .card-container .content{
@@ -566,7 +563,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
+    
 }
 .button{
     display: flex;
@@ -611,7 +609,8 @@
     padding: 8px 16px;
     background-color: #4070F4;
     border-radius: 6px;
-    margin: 14px;
+    margin: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -756,6 +755,89 @@ input[type="radio"]{
     font-weight: 500;
     color: #000;
 }
+.page-adoption .article-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.page-adoption .article-box .article-shape {
+    margin-right: 25px; 
+}
+
+.page-adoption .article-box .article-shape:last-child {
+    margin-right: 0; 
+}
+.page-adoption .article-shape{
+    background-color: #fff;
+    margin-right: 10px;
+    width: 400px; 
+    height: 430px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: #000 0px 0px 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/* .page-adoption .article-shape .articles .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    border-radius: 10%;
+    
+} */
+.page-adoption .article-shape .articles .img img{
+    max-height: 290px;
+    width: 100%;
+    object-position: 50% 50%;
+    
+} 
+.page-adoption .article-shape .articles .img{
+    max-height: 250px;
+    width: 100%;
+    display: block;
+    margin-bottom: 14px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+    
+
+}
+
+.page-adoption .article-shape .articles .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.page-adoption .article-shape .articles span{
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    top: -15px;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.page-adoption .article-shape .touch{
+    font-size: 16px;
+    font-weight: 600;
+    color: #512da8;
+    background-color: #ffffff;
+    height: 15%;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    border-top: 1.5px solid #000;
+    cursor: pointer;
+}
 /* style for search page continue */
 .home-section .search-container{
     position: absolute;
@@ -773,7 +855,7 @@ input[type="radio"]{
     background: #fff;
     width: calc(25% - 20px);
     margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
-    padding: 30px;
+    padding: 10px;
     border-radius: 24px;
     transition: all 0.4s ease;
     box-shadow: 0px 0px 3px #000;
@@ -884,6 +966,14 @@ input[type="radio"]{
 .home-section .filter-shape .filter-box .answer label:hover {
     background-color: #ccc;
 }
+.home-section .bottom-page{
+    max-height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+.home-section .bottom-page img{
+    width: 100%;
+    object-fit: cover;
 
-
-
+}

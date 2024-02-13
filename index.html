@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>Adoption Website | Pawsitive</title>
+        <title>Main Page | Pawsitive</title>
         <link rel="stylesheet" href="Assets/CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -36,12 +36,12 @@
                     </div>
                     <ul class="sub-menu">
                         <li><a class="link_name" href="#">Search</a></li>
-                        <li><a href="#">Dogs</a></li>
-                        <li><a href="#">Cats</a></li>
-                        <li><a href="#">Birds</a></li>
+                        <li><a href="search-dog.html">Dogs</a></li>
+                        <li><a href="search-cat.html">Cats</a></li>
+                        <li><a href="search-other.html">Other Animals</a></li>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                     <div class="icon_link">
                         <a href="adoption.html">
                             <i class='bx bx-home-heart' ></i>
@@ -55,10 +55,10 @@
                         <li><a href="#">Cats</a></li>
                         <li><a href="#">Birds</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li>
                     <div class="icon_link">
-                        <a href="#">
+                        <a href="createRecuse.html">
                             <i class='bx bx-plug' ></i>
                             <span class="link_name">Rescue</span>
                         </a>
@@ -117,10 +117,6 @@
     </ul>
         </div>
         <section class="home-section">
-            <div class="buttons-container">
-                <button class="Login" onclick="window.location.href='SigninSignup.html'">Looking for a paw?</button>
-                <button class="Login" onclick="window.location.href='SigninSignup.html'">Ready to sell?</button>
-            </div>
             <div class="faq-button">
                 <a id="show-faq" class="faq-icon">
                     <i class='bx bx-message-error'></i>
@@ -186,6 +182,10 @@
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
                 <span class="text">Welcome To Pawsitive</span>
+                <div class="buttons-container">
+                    <button class="LoginA" onclick="window.location.href='SigninSignup.html'">Looking for a paw?</button>
+                    <button class="LoginB" onclick="window.location.href='SigninSignup.html'">Ready to sell?</button>
+                </div>
             </nav>
             
             <section class="first-page">
@@ -200,19 +200,27 @@
             <section class="second-page">
                 <div class="center-shapes">
                     <div class="white-shape">
-                        <img src="Assets/Image/Cute-Cat-icon.1024.png" alt="">
+                        <a href="search-cat.html">
+                            <img src="Assets/Image/Cute-Cat-icon.1024.png" alt="search-cat.html">
+                        </a>
                         <div class="shape-text">Cats</div>
                     </div>
                     <div class="white-shape">
-                        <img src="Assets/Image/cute-dog-icon.png" alt="">
+                        <a href="search-dog.html">
+                            <img src="Assets/Image/cute-dog-icon.png" alt="">
+                        </a>
                         <div class="shape-text">Dogs</div>
                     </div>
                     <div class="white-shape">
-                        <img src="Assets/Image/other-animal.jpg" alt="">
+                        <a href="search-other.html">
+                            <img src="Assets/Image/other-animal.jpg" alt="">
+                        </a>
                         <div class="shape-text">Other animals</div>
                     </div>
                     <div class="white-shape">
-                        <img src="Assets/Image/shelter-icon.png" alt="">
+                        <a href="adoption.html">
+                            <img src="Assets/Image/shelter-icon.png" alt="">
+                        </a>
                         <div class="shape-text">Shelter</div>
                     </div>
                     
@@ -230,7 +238,7 @@
             <section class="page-adoption">
                 <div class="container">
                     <div class="title">
-                        <p>Dogs adoption avaliable nearby</p>
+                        <p>Adoption avaliable nearby</p>
                     </div>
                     <input type="radio" name="dot" id="oneA">
                     <input type="radio" name="dot" id="twoA">
@@ -239,23 +247,11 @@
                             <div class="card">
                                 <div class="content">
                                     <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
+                                        <img src="Assets/Image/German-Spitz-standing-in-profile-outdoors.jpg" alt="">
                                     </div>
                                     <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>   
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog2.webp" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Samoyed</div>
-                                        <div class="gender">Mother & Child</div>
+                                        <div class="name">German Spitz</div>
+                                        <div class="gender">The German Spitz is always attentive, lively and exceptionally devoted to his owner. He is very teachable and easy to train. His distrust towards strangers…</div>
                                     </div>
                                     <button class="button1">View More</button>
                                 </div>
@@ -263,11 +259,23 @@
                             <div class="card">
                                 <div class="content">
                                     <div class="img">
-                                        <img src="Assets/Image/dog4.jpg" alt="">
+                                        <img src="Assets/Image/Cats/Burmese cat.webp" alt="">
                                     </div>
                                     <div class="details">
-                                        <div class="name">American Bully</div>
-                                        <div class="gender">Male</div>
+                                        <div class="name">Burmese cat</div>
+                                        <div class="gender">The Burmese cat is a breed of domestic cat, originating in Burma, believed to have its roots near the Thai-Burma border and developed in the United States ...</div>
+                                    </div>
+                                    <button class="button1">View More</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <div class="img">
+                                        <img src="Assets/Image/Dachshund.webp" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="name">Dachshund</div>
+                                        <div class="gender">The famously long, low silhouette, ever-alert expression, and bold, vivacious personality of the Dachshund have made him a superstar of the canine …</div>
                                     </div>
                                     <button class="button1">View More</button>
                                 </div>
@@ -277,11 +285,11 @@
                             <div class="card">
                                 <div class="content">
                                     <div class="img">
-                                        <img src="Assets/Image/dog3.webp" alt="">
+                                        <img src="Assets/Image/Other animals/Velvet spider.jpg" alt="">
                                     </div>
                                     <div class="details">
-                                        <div class="name">Chihuahua</div>
-                                        <div class="gender">Male</div>
+                                        <div class="name">Velvet spider</div>
+                                        <div class="gender">Velvet spiders (family Eresidae) are a small group (about 100 species in 9 genera) of spiders almost entirely limited to the Old World, with the exception ...</div>
                                     </div>
                                     <button class="button1">View More</button>
                                 </div>
@@ -289,11 +297,11 @@
                             <div class="card">
                                 <div class="content">
                                     <div class="img">
-                                        <img src="Assets/Image/dog5.jpg" alt="">
+                                        <img src="Assets/Image/Cats/Ragdoll.jpg" alt="">
                                     </div>
                                     <div class="details">
-                                        <div class="name">Beagle</div>
-                                        <div class="gender">Male</div>
+                                        <div class="name">Ragdoll</div>
+                                        <div class="gender">The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat ...</div>
                                     </div>
                                     <button class="button1">View More</button>
                                 </div>
@@ -301,11 +309,11 @@
                             <div class="card">
                                 <div class="content">
                                     <div class="img">
-                                        <img src="Assets/Image/dog6.jpg" alt="">
+                                        <img src="Assets/Image/Cats/Birman.jpg" alt="">
                                     </div>
                                     <div class="details">
-                                        <div class="name">Cavapoo</div>
-                                        <div class="gender">Male</div>
+                                        <div class="name">Birman</div>
+                                        <div class="gender">The Birman , also called the "Sacred Cat of Burma", is a domestic cat breed. The Birman is a long-haired, colour-pointed cat distinguished by a silky coat, ...</div>
                                     </div>
                                     <button class="button1">View More</button>
                                 </div>
@@ -320,95 +328,32 @@
                 
             </section>
             <section class="page-adoption">
-                <div class="container">
-                    <div class="title">
-                        <p>Cats adoption avaliable nearby</p>
-                    </div>
-                    <input type="radio" name="dot" id="oneB">
-                    <input type="radio" name="dot" id="twoB">
-                    <div class="main-card">
-                        <div class="cards">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>   
-                                </div>
+                <div class="article-box">
+                    <div class="article-shape">
+                        <div class="articles">
+                            <div class="img">
+                                <img src="Assets/Image/confused1.1.jpg" alt="">'
                             </div>
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>
-                                </div>
-                            </div>
+                            <div class="title">Dog Adoption Articles</div>
+                            <span>Learn more about caring for your new dog</span>
                         </div>
-                        <div class="cards">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="Assets/Image/dog1.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">Alaskan Malamute</div>
-                                        <div class="gender">Male</div>
-                                    </div>
-                                    <button class="button1">View More</button>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="touch">Read More</button>
                     </div>
-                    <div class="button">
-                        <label for="oneB"class="one active"></label>
-                        <label for="twoB"class="two"></label>
+                    <div class="article-shape">
+                        <div class="articles">
+                            <div class="img">
+                                <img src="Assets/Image/confused2.jpg" alt="">
+                            </div>
+                            <div class="title">Cat Adoption Articles</div>
+                            <span>Helpful insights on what to expect.</span>
+                        </div>
+                        <button class="touch">Read More</button>
                     </div>
                 </div>
+            
+            </section>
+            <section class="bottom-page">
+                <img src="Assets/Image/bottom.png" alt="">
             </section>
         </section>
             
