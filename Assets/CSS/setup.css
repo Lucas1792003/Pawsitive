@@ -405,7 +405,8 @@
 }
 .upload-detail3{
     display: flex;
-    padding-left: 120px;
+    padding-left: 140px;
+    padding-right: 140px;
     background-color: white;
 }
 .collapsible{
@@ -502,7 +503,8 @@
 
 .upload-detail4{
     display: flex;
-    padding-left: 120px;
+    padding-left: 140px;
+    padding-right: 140px;
     padding-top: 50px;
 }
 .health{

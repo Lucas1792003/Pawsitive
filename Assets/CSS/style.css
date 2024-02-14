@@ -252,95 +252,109 @@
 
 
 /* apllication_detail */
-.contact_information{
+.user-box{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-left: 80px;
-    align-items: center;
+    padding-right: 80px;
 }
-.contact_information h2{
+.user-detail{
+    border: 2px solid black;
+    padding-left: 40px;
+    border-radius: 6px;
+    width: 100%;
+}
+.user-detail h3{
+    position: relative;
+    left: 450px;
+    top: 20px;
     border-bottom: 8px solid;
-    position: absolute;
+    width: 170px;
 }
-.user_info{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 80px;
-    padding-top: 20px;
-}
-.user_info ul{
-    list-style: none;
-}
-.user_info a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.user_info li{
-    margin: 10px 0;
-}
-.user-detail {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 20px;
-    font-weight: bold;
-}
-.user-detail li{
-    margin: 10px 0;
-}
-img{
+.user-detail img{
     width: 200px;
     height: 200px;
-    margin-right: 90px;
+    position: relative;
+    top: 30px;
 }
-.bart{
-    display: flex;
-    margin-top: -20px;
+.user-info a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
 }
-.situation{
-    padding-top: 10px;
-    padding-left: 80px;
-}
-.situation_info{
-    display: flex;
-    padding-left: 80px;
-    padding-top: 20px;
-}
-.situation_info ul{
+.user-info ul{
     list-style: none;
 }
-.situation_info a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.user-info{
+    position : relative;
+    left: 250px;
+    bottom: 130px;
 }
-.situation_info li{
-    margin: 10px 0;
-}
-.reason{
-    padding-top: 50px;
-    padding-left: 80px;
-}
-.reason_info{
+.order-box{
     display: flex;
+    padding-top: 80px;
     padding-left: 80px;
-    padding-top: 60px;
+    padding-right: 80px;
 }
-.reason_info ul{
+.order-detail{
+    border: 2px solid black;
+    padding-left: 40px;
+    border-radius: 6px;
+    width: 100%;
+}
+.order-detail h3{
+    position: relative;
+    left: 450px;
+    top: 20px;
+    border-bottom: 8px solid;
+    width: 130px;
+}
+.order-detail img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 30px;
+    border-radius: 6px;
+}
+.order-info a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.order-info ul{
     list-style: none;
 }
-.reason_info a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.order-info{
+    position : relative;
+    left: 250px;
+    bottom: 130px;
 }
-.reason_info li{
-    margin: 10px 0;
+.app-button{
+    position: relative;
+    left: 500px;
+    top: 100px;
 }
+.confirm{
+    background-color: rgb(27, 210, 27);
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.app-cancel{
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
 
 
 /* product profile */
@@ -362,7 +376,7 @@ img{
 }
 .slider{
     position: relative;
-    width: 40%;
+    width: 37%;
     overflow: hidden;
 }
 .img_slide{
@@ -400,13 +414,13 @@ img{
     margin-left: 0;
 }
 #img2:checked ~ .m2{
-    margin-left: -119%;
+    margin-left: -120%;
 }
 #img3:checked ~ .m3{
-    margin-left: -238%;
+    margin-left: -242%;
 }
 #img4:checked ~ .m4{
-    margin-left: -357%;
+    margin-left: -362%;
 } 
 .product_info-box{
     border: 1px solid black;
@@ -707,6 +721,7 @@ img{
 .app_detail-homer a{
     text-decoration: none;
     color: #1c1c6b;
+    padding-left: 90px;
 }
 .app_detail-homer ul{
     list-style: none;
@@ -765,8 +780,7 @@ img{
 .app_detail-bart a{
     text-decoration: none;
     color: #1c1c6b;
-    position: relative;
-    left: 10px;
+    padding-left: 100px;
 }
 .app_detail-bart ul{
     list-style: none;
@@ -779,7 +793,7 @@ img{
 }
 .bart_button{
     position: relative;
-    left: 415px;
+    left: 400px;
     top: 10px;
 }
 .bart_button button{
@@ -823,6 +837,7 @@ img{
 .app_detail-lisa a{
     text-decoration: none;
     color: #1c1c6b;
+    padding-left: 90px;
 }
 .app_detail-lisa ul{
     list-style: none;
