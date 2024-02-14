@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Adoption Website | Pawsitive</title>
+        <link rel="stylesheet" href="Assets/CSS/buyer_style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo-datails">
+                <i class='bx bxl-baidu'></i>
+                <span class="logo_name">Pawsitive</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Dashboard</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <div class="icon_link">
+                        <a href="search.html">
+                            <i class='bx bx-search-alt-2' ></i>
+                            <span class="link_name">Search</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Search</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="adoption.html">
+                            <i class='bx bx-home-heart' ></i>
+                            <span class="link_name">Adoption</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Adoption</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-plug' ></i>
+                            <span class="link_name">Rescue</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Rescue</a></li>
+                        <li><a href="#">Call</a></li>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class='bx bx-compass' ></i>
+                        <span class="link_name">Service</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Service</a></li>
+                        
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="appStat.html">
+                        <i class='bx bx-history' ></i>
+                        <span class="link_name">Application Status</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Application Status</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class='bx bxs-cog' ></i>
+                        <span class="link_name">Setting</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Setting</a></li>
+                        
+                    </ul>
+                </li>
+            <li>
+            <div class="profile-details">
+                <div class="profile-content">
+                    <img src="Assets/Image/Profile.webp" alt="Profile">
+                </div>
+                
+                <div class="name-job">
+                    <div class="profile_name">Samanthar</div>
+                    <div class="job">Beginner</div>
+                </div>
+                <i class='bx bx-log-out' ></i>
+            </div>
+        </li>
+    </ul>
+        </div>
+        <section class="home-section">
+            <div class="buttons-container">
+                <button class="Login" onclick="window.location.href='SigninSignup.html'">Looking for a paw?</button>
+                <button class="Login" onclick="window.location.href='SigninSignup.html'">Ready to sell?</button>
+            </div>
+            <nav class="home-content">
+                <i class="bx bx-menu"></i>
+                <span class="text">Edit Shelter</span>
+            </nav>
+            <div class = "setup">
+                <input type = "file" id = "fileInput">
+                    <label for = "fileInput">
+                    <i class='bx bx-upload' ></i><br>
+                    <a>Upload File</a>
+                    <div class = "setup_detail">
+                        <input type = "text" placeholder="Shelter Name" class = "name">
+                        <input type = "number" placeholder="Phone No." class = "phone">
+                        <input type = "text" placeholder="Shop Location" class = "location">
+                        <input type = 'text' placeholder="E-Mail" class = "email">
+                        <input type = "number" placeholder="Business Hours" class = "hour">
+                    </div>
+                    </label>
+                    </div>
+                    <div class = "setup-detail2">
+                        <input type = "text" placeholder="About Us" class = "about">
+                        <input type = "text" placeholder="Mission Statement" class = "mission">
+                    </div>
+                    <div class = "setup-detail3">
+                        <div class = "collapsible">
+                            <input type = "checkbox" id = "collapsible-head">
+                            <label for = "collapsible-head">Puppy Care Package
+                                <i class='bx bx-chevron-right'></i>
+                            </label>
+                            <div class = "collapsible-text">
+                                <h2>Health and Care Information</h2>
+                                <form>
+                                    <input type = "checkbox" class = "friendly">
+                                        <a href = "#"class = "freindly1">Friendly</a>
+                                    </input>
+                                    <input type = "checkbox" class = "loyal">
+                                        <a href = "#"class = "loyal1" >Loyal</a>
+                                    </input>
+                                    <input type = "checkbox" class = 'train'>
+                                        <a href = "#"class = "train1">Trainability</a>
+                                    </input>
+                                    <input type = "checkbox" class = "social">
+                                        <a href = "#"class = "social1">sociability</a>
+                                    </input>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "setup-detail4">
+                        <div class = "health">
+                            <input type = "checkbox" id = "health-and-care">
+                            <label for = "health-and-care">Pet Characteristics And Behaviors
+                                <i class='bx bx-chevron-right'></i>
+                            </label>
+                            <div class = "health-text">
+                                <h2>About Pet</h2>
+                                <form>
+                                    <input type = "checkbox">
+                                        <a href = "#">Healthy</a>
+                                    </input>
+                                    <input type = "checkbox"class = "leg">
+                                        <a href = "#" class = "leg1">Leg Broken</a>
+                                    </input>
+                                    <input type = "checkbox" class = "idiot">
+                                        <a href = "#" class = "idiot1">Idiot dog</a>
+                                    </input>
+                                    <input type = "checkbox" class = "other">
+                                        <a href = "#" class = "other1">Other</a>
+                                    </input>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "create-detail5">
+                        <button type = "button" class= "submit">Submit</button>
+                        <button type = "button" class = "cancel">Cancel</button>
+                    </div>
+                    </section>
+                    <script src = "Assets/JS/rescuer_script.js"></script>
+            </section>
+        </body>
+    </html>

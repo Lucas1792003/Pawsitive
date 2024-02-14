@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>Seller | Pawsitive</title>
-        <link rel="stylesheet" href="Assets/CSS/productlist.css">
+        <title>Adoption Website | Pawsitive</title>
+        <link rel="stylesheet" href="Assets/CSS/buyer_style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class = "sidebar">
+        <div class="sidebar">
             <div class="logo-datails">
-                <i class="bx bxl-baidu"></i>
+                <i class='bx bxl-baidu'></i>
                 <span class="logo_name">Pawsitive</span>
             </div>
             <ul class="nav-links">
@@ -25,49 +25,51 @@
                         
                     </ul>
                 </li>
+                
                 <li>
                     <div class="icon_link">
-                        <a href="app_status.html">
-                            <i class='bx bx-edit-alt'></i>
-                            <span class="link_name">Status</span>
+                        <a href="search.html">
+                            <i class='bx bx-search-alt-2' ></i>
+                            <span class="link_name">Search</span>
                         </a>
+                        <i class='bx bxs-chevron-down arrow' ></i>
                     </div>
-                    <!-- <ul class="sub-menu">
+                    <ul class="sub-menu">
                         <li><a class="link_name" href="#">Search</a></li>
                         <li><a href="#">Dogs</a></li>
                         <li><a href="#">Cats</a></li>
                         <li><a href="#">Birds</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <li>
                     <div class="icon_link">
-                        <a href="newlisting.html">
-                            <i class='bx bx-list-plus'></i>
-                            <span class="link_name">New Listing</span>
+                        <a href="adoption.html">
+                            <i class='bx bx-home-heart' ></i>
+                            <span class="link_name">Adoption</span>
                         </a>
-                        <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                        <i class='bx bxs-chevron-down arrow' ></i>
                     </div>
-                    <!-- <ul class="sub-menu">
+                    <ul class="sub-menu">
                         <li><a class="link_name" href="#">Adoption</a></li>
                         <li><a href="#">Dogs</a></li>
                         <li><a href="#">Cats</a></li>
                         <li><a href="#">Birds</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <li>
                     <div class="icon_link">
-                        <a href="setup.html">
-                            <i class='bx bx-cog' ></i>
-                            <span class="link_name">Set Up Shop</span>
+                        <a href="#">
+                            <i class='bx bx-plug' ></i>
+                            <span class="link_name">Rescue</span>
                         </a>
-                        <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                        <i class='bx bxs-chevron-down arrow' ></i>
                     </div>
-                    <!-- <ul class="sub-menu">
+                    <ul class="sub-menu">
                         <li><a class="link_name" href="#">Rescue</a></li>
                         <li><a href="#">Call</a></li>
                         <li><a href="#">Chat</a></li>
                         <li><a href="#">Email</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <!-- <li>
                     <a href="#">
@@ -78,19 +80,19 @@
                         <li><a class="link_name" href="#">Service</a></li>
                         
                     </ul>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#">
+                    <a href="appStat.html">
                         <i class='bx bx-history' ></i>
-                        <span class="link_name">History</span>
+                        <span class="link_name">Application Status</span>
                     </a>
                     <ul class="sub-menu blank">
-                        <li><a class="link_name" href="#">History</a></li>
+                        <li><a class="link_name" href="#">Application Status</a></li>
                         
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="setting.html">
                         <i class='bx bxs-cog' ></i>
                         <span class="link_name">Setting</span>
                     </a>
@@ -99,25 +101,29 @@
                         
                     </ul>
                 </li>
-                <li> -->
-                    <div class="profile-details">
-                        <div class="profile-content">
-                            <img src="Assets/Image/Profile.webp" alt="Profile">
-                        </div>
-                        
-                        <div class="name-job">
-                            <div class="profile_name">Samanthar</div>
-                            <div class="job">Beginner</div>
-                        </div>
-                        <i class='bx bx-log-out' ></i>
-                    </div>
-                </li>
-            </ul>
+            <li>
+            <div class="profile-details">
+                <div class="profile-content">
+                    <img src="Assets/Image/Profile.webp" alt="Profile">
+                </div>
+                
+                <div class="name-job">
+                    <div class="profile_name">Samanthar</div>
+                    <div class="job">Beginner</div>
+                </div>
+                <i class='bx bx-log-out' ></i>
+            </div>
+        </li>
+    </ul>
         </div>
         <section class="home-section">
+            <div class="buttons-container">
+                <button class="Login" onclick="window.location.href='SigninSignup.html'">Looking for a paw?</button>
+                <button class="Login" onclick="window.location.href='SigninSignup.html'">Ready to sell?</button>
+            </div>
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
-                <span class="text">Product Listings</span>
+                <span class="text">Available For Rescue</span>
             </nav>
             <div class = "search">
                 <form>
@@ -126,11 +132,13 @@
             </div>
             <div class = "samoyed-box">
                 <div class = "samoyed-container">
-                    <img src = "Assets/Image/Samoyed (1).jpg" alt = "Samoyed">
+                    <img src = "Assets/Image/dog1.png" alt = "Samoyed">
                     <ul>
-                        <li><a href = "#">Name: Chu Chu</a></li>
-                        <li><a href = "#">Breed: Samoyed</a></li>
-                        <li><a href = "#">Listing_id 123434555</a></li>
+                        <li><a href = "#">Location: Origin Place, Samut Prakarn, 10270</a></li>
+                        <li><a href = "#">Distance: 3km, 5 min from your distance</a></li>
+                        <li><a href = "#">Animal: Dog</a></li>
+                        <li><a href = "#">Breed: Alaskan Malamute</a></li>
+                        <li><a href = "#">Posted Date: 12/11/2023</a></li>
                     </ul>
                     <button class = "open" onclick = "openForm()">
                         <i class='bx bx-dots-vertical-rounded'></i>
@@ -144,5 +152,9 @@
                 </div>
             </div>
         <script src = "Assets/JS/script.js"></script>
+    </body>
+</html>
+            <script src = "Assets/JS/rescuer_script.js"></script>
+        </section>
     </body>
 </html>

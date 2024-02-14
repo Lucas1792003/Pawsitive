@@ -215,7 +215,7 @@
 }
 .home-section{
     position: relative;
-    background: #e1dfdf;
+    background: white;
     height: 150vh;
     left: 260px;
     width: calc(100% - 260px);
@@ -687,10 +687,10 @@ img{
     padding-right: 50px;
 }
 .homer-box{
-    border: 1px solid #fff;
+    border: 2px solid black;
     position: relative;
     top: 30px;
-    box-shadow: #000 0px 0px 2px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     border-radius: 10px;
     height: 150px;
 }
@@ -706,7 +706,7 @@ img{
 }
 .app_detail-homer a{
     text-decoration: none;
-    color: black;
+    color: #1c1c6b;
 }
 .app_detail-homer ul{
     list-style: none;
@@ -742,10 +742,10 @@ img{
     cursor: pointer;
 }
 .bart-box{
-    border: 1px solid #fff;
+    border: 2px solid black;
     position: relative;
     top: 50px;
-    box-shadow: #000 0px 0px 2px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     border-radius: 10px;
     height: 150px;
 }
@@ -764,7 +764,7 @@ img{
 }
 .app_detail-bart a{
     text-decoration: none;
-    color: black;
+    color: #1c1c6b;
     position: relative;
     left: 10px;
 }
@@ -802,10 +802,10 @@ img{
     cursor: pointer;
 }
 .lisa-box{
-    border: 1px solid #fff;
+    border: 2px solid black;
     position: relative;
     top: 70px;
-    box-shadow: #000 0px 0px 2px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     border-radius: 10px;
     height: 150px;
 }
@@ -822,7 +822,7 @@ img{
 }
 .app_detail-lisa a{
     text-decoration: none;
-    color: black;
+    color: #1c1c6b;
 }
 .app_detail-lisa ul{
     list-style: none;

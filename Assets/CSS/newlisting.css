@@ -404,13 +404,16 @@
     width: 100%;
     padding-top: 100px;
     padding-left: 150px;
+    padding-right: 150px;
 }
 .list_upload-detail1 input.list_upload-description{
     border: 2px solid black;
     border-radius: 6px;
     background-color: white;
     padding-bottom: 150px;
-    padding-right: 780px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
 }
 .list_upload-detail1 .list_upload-description::placeholder{
     font-weight: bold;
