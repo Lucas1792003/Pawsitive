@@ -14,15 +14,6 @@ let arrow = document.querySelectorAll(".arrow");
             sidebarBtn.addEventListener("click",()=>{
                 sidebar.classList.toggle("close");
             });
-
-document.querySelector("#show-faq").addEventListener("click", function() {
-    document.querySelector(".popup").classList.add("active");
-});
-
-document.querySelector(".popup .close-btn").addEventListener("click", function() {
-    document.querySelector(".popup").classList.remove("active");
-});
-
 var acc = document.getElementsByClassName("question");
 var i;
 for(i = 0; i < acc.length; i++) {
@@ -38,6 +29,14 @@ for(i = 0; i < acc.length; i++) {
         
     });
 }
+document.querySelector("#show-faq").addEventListener("click", function() {
+    document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click", function() {
+    document.querySelector(".popup").classList.remove("active");
+});
+
 let searchBox = document.querySelector('#search-box');
 let images = document.querySelectorAll('.search-container .image-container .card .content .img');
 
