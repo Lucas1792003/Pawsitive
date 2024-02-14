@@ -209,6 +209,12 @@
 .active, .accordion:hover{
     background-color: #f1f7f5;
 }
+.tipBreed .info-box .question img{
+    color: blue;
+    height: 60px;
+    border-radius: 50%;
+
+}
 .tipBreed .info-box .info .answer{
     padding: 0 1rem 0.5rem 1rem;
     background-color: #fff;
