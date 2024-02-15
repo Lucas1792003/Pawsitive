@@ -278,3 +278,24 @@
     height: auto;
     margin-right: 10px;
 }
+.home-content > button,.home-content .tab button{
+    position: absolute;
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    /* z-index: 10000; */
+    cursor: pointer;
+}
+.home-content > button{
+    left: 1150px;
+    background-color: red;
+}
+.home-content .tab button{
+    left: 1070px;
+    top: 8px;
+    background-color: #0571dddd;
+}
