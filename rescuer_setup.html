@@ -100,39 +100,34 @@
         <section class="home-section">
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
-                <span class="text">Create A Pet Profile</span>
+                <span class="text">Edit Shelter</span>
             </nav>
-            <div class = "create">
+            <div class = "setup">
                 <input type = "file" id = "fileInput">
                     <label for = "fileInput">
                     <i class='bx bx-upload' ></i><br>
                     <a>Upload File</a>
-                    <div class = "create_detail">
-                        <input type = "text" placeholder="Name" class = "name">
-                        <input type = "text" placeholder="Price" class = "price">
-                        <input type = "text" placeholder="Animal Type" class = "animal">
-                        <input type = "text" placeholder="Breed" class = "breed">
-                        <h5>Date of Birth</h5>
-                        <input type = "date" placeholder="DOB" class = "dob">
-                        <select class = "select-container">
-                            <option value = "">Sex</option>
-                            <option value = "male">Male</option>
-                            <option value = "female">Female</option>
-                        </select>
+                    <div class = "setup_detail">
+                        <input type = "text" placeholder="Shelter Name" class = "name">
+                        <input type = "number" placeholder="Phone No." class = "phone">
+                        <input type = "text" placeholder="Shop Location" class = "location">
+                        <input type = 'text' placeholder="E-Mail" class = "email">
+                        <input type = "number" placeholder="Business Hours" class = "hour">
                     </div>
                     </label>
                     </div>
-                    <div class = "create-detail1">
-                        <input type = "text" placeholder="Background/Rescue History" class = "create-detail1_back">
+                    <div class = "setup-detail2">
+                        <input type = "text" placeholder="About Us" class = "about">
+                        <input type = "text" placeholder="Mission Statement" class = "mission">
                     </div>
-                    <div class = "create-detail3">
+                    <div class = "setup-detail3">
                         <div class = "collapsible">
                             <input type = "checkbox" id = "collapsible-head">
                             <label for = "collapsible-head">Puppy Care Package
                                 <i class='bx bx-chevron-right'></i>
                             </label>
                             <div class = "collapsible-text">
-                                <h2>Services</h2>
+                                <h2>Health and Care Information</h2>
                                 <form>
                                     <input type = "checkbox" class = "friendly">
                                         <a href = "#"class = "freindly1">Friendly</a>
@@ -150,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class = "create-detail4">
+                    <div class = "setup-detail4">
                         <div class = "health">
                             <input type = "checkbox" id = "health-and-care">
                             <label for = "health-and-care">Pet Characteristics And Behaviors
@@ -176,8 +171,8 @@
                         </div>
                     </div>
                     <div class = "create-detail5">
-                        <button type = "button" class= "submit" onclick="window.location.href='rescueList.html'">Submit</button>
-                        <button type = "button" class = "cancel" onclick="window.location.href='rescuer_blank.html'">Cancel</button>
+                        <button type = "button" class= "submit">Submit</button>
+                        <button type = "button" class = "cancel" onclick="window.location.href='rescuer_animal-profile.html'">Cancel</button>
                     </div>
                     </section>
                     <script src = "Assets/JS/rescuer_script.js"></script>
