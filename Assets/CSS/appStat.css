@@ -80,7 +80,7 @@ body, h1, p {
 .buttons {
     margin-left: 20px;
 }
-.home-content button{
+/* .home-content button{
     position: absolute;
     left: 1130px;
     background-color: #0571dddd;
@@ -91,7 +91,22 @@ body, h1, p {
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    /* z-index: 10000; */
+    
+    cursor: pointer;
+} */
+
+.home-content button{
+    background-color: #0571dddd;
+    position: fixed;
+    right: 30px; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     cursor: pointer;
 }
 .stat-box img{

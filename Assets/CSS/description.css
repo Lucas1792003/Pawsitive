@@ -290,7 +290,7 @@
     /* z-index: 10000; */
     cursor: pointer;
 }
-.home-content > button{
+/* .home-content > button{
     left: 1150px;
     background-color: red;
 }
@@ -298,4 +298,31 @@
     left: 1070px;
     top: 8px;
     background-color: #0571dddd;
+} */
+.home-content .LoginB {
+    padding-top: 10px; /* Adjust the value as needed */
+    background-color: red;
+}
+.home-content .LoginA {
+    background-color: #0571dddd;
+}
+.home-content .button-bar{
+    padding: 20px;
+    position: fixed;
+    right: 10px; 
+
+    
+}
+.home-content .LoginA,     
+.home-content .LoginB{
+
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
