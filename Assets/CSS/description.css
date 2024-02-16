@@ -326,3 +326,17 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+.home-content button{
+    background-color: #0571dddd;
+    position: fixed;
+    right: 30px; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

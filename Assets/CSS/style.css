@@ -919,6 +919,7 @@ input[type="radio"]{
 .home-section .filter-content {
     margin-bottom: 10px;
 }
+
 .home-section .filter-shape .filter-content {
     display: flex;
     flex-wrap: wrap;

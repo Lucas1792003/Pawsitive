@@ -1,0 +1,72 @@
+.home-section .text-shape{
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+.home-section .text-shape h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.text-box{
+    margin-top: 50px;
+    text-align: left;
+}
+.text-box label {
+    margin-left: 60px;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.text-box input {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+    width: 90%;
+    padding: 10px; /* Added padding for input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-box > .des-box{
+    padding: 50px;
+    margin-bottom: 100px;
+    
+}
+.text-shape .buttons-container{
+    bottom: 10px;
+    padding: 20px
+}
+.text-shape .buttons-container button{
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text-shape .buttons-container .btnA{
+    background-color: green;
+}
+.text-shape .buttons-container .btnB{
+    background-color: red;
+}
