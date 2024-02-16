@@ -1,8 +1,7 @@
 .home-section .text-shape{
     position: absolute;
-    top: 145%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,5%);
     width: 90%;
     height: auto;
     border-radius: 10px;

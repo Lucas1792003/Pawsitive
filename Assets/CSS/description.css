@@ -310,8 +310,6 @@
     padding: 20px;
     position: fixed;
     right: 10px; 
-
-    
 }
 .home-content .LoginA,     
 .home-content .LoginB{
@@ -326,7 +324,7 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-.home-content button{
+.home-content .interested{
     background-color: #0571dddd;
     position: fixed;
     right: 30px; 
