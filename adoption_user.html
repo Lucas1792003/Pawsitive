@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Seller | Pawsitive</title>
-        <link rel="stylesheet" href="Assets/CSS/productlist.css">
+        <link rel="stylesheet" href="Assets/CSS/adoption.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,12 @@
                         </a>
                         <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                     </div>
+                    <!-- <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Adoption</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul> -->
                 </li>
                 <li>
                     <div class = "icon_link">
@@ -55,7 +61,6 @@
                             <span class = "link_name">Adoption</span>
                         </a>
                     </div>
-                
                 </li>
                 <li>
                     <div class="icon_link">
@@ -120,32 +125,55 @@
         <section class="home-section">
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
-                <span class="text">Product Listings</span>
+                <span class="text">Adoption User</span>
             </nav>
-            <div class = "search">
-                <form>
-                    <input type = "text" placeholder = "Search"name = "searchbar">
-                </form>
-            </div>
-            <div class = "samoyed-box">
-                <div class = "samoyed-container">
-                    <img src = "Assets/Image/Samoyed (1).jpg" alt = "Samoyed">
-                    <ul>
-                        <li><a href = "#">Name: Chu Chu</a></li>
-                        <li><a href = "#">Breed: Samoyed</a></li>
-                        <li><a href = "#">Listing_id 123434555</a></li>
-                    </ul>
-                    <button class = "open" onclick = "openForm()">
-                        <i class='bx bx-dots-vertical-rounded'></i>
-                    </button>
-                    <div class = "form-popup" id = "myForm">
-                        <form  class = "form-container">
-                            <button type = "button" class = "more_info" onclick="window.location.href='productprofile.html'">More Info</button>
-                            <button type = "submit" class = "delete">Delete</button>
-                        </form>
+            <div class = "app_detail-container">
+                <h2>Application Submissions</h2>
+                <div class = "homer-box">
+                    <div class = "app_detail-homer">
+                        <img src = "Assets/Image/homer.png" alt = "homer">
+                        <ul>
+                            <li><a href = "#">Name: Homer</a></li>
+                            <li><a href = "#">Animal: Dog</a></li>
+                            <li><a href = "#">Submission Date: 08/ Feb/ 2024</a></li>
+                        </ul>
+                        <div class = "homer_button">
+                            <button type = "button" class = "approve1">Approve</button>
+                            <button type = "button" class = "reject1">Reject</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "bart-box">
+                    <div class = "app_detail-bart">
+                        <img src = "Assets/Image/bart-.png" alt = "bart">
+                        <ul>
+                            <li><a href = "#">Name: Bart Simpson</a></li>
+                            <li><a href = "#">Animal: Cat</a></li>
+                            <li><a href = "#">Submission Date: 01/ Jan/ 2024</a></li>
+                        </ul>
+                        <div class = "bart_button">
+                            <button type = "button" class = "approve2">Approve</button>
+                            <button type = "button" class = "reject2">Reject</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "lisa-box">
+                    <div class = "app_detail-lisa">
+                        <img src = "Assets/Image/lisa.png" alt = "lisa">
+                        <ul>
+                            <li><a href = "#">Name: Lisa Simpson</a></li>
+                            <li><a href = "#">Animal: Bird</a></li>
+                            <li><a href = "#">Submission Date: 12/ Dec/ 2023</a></li>
+                        </ul>
+                        <div class = "lisa_button">
+                            <button type = "button" class = "approve3"  onclick = "window.location.href = 'adoption_detail.html'">Approve</button>
+                            <button type = "button" class = "reject3">Reject</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+        </section>
         <script src = "Assets/JS/script.js"></script>
     </body>
 </html>

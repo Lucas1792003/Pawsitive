@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Seller | Pawsitive</title>
-        <link rel="stylesheet" href="Assets/CSS/productlist.css">
+        <link rel="stylesheet" href="Assets/CSS/adoption.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,12 @@
                         </a>
                         <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
                     </div>
+                    <!-- <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Adoption</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul> -->
                 </li>
                 <li>
                     <div class = "icon_link">
@@ -55,7 +61,6 @@
                             <span class = "link_name">Adoption</span>
                         </a>
                     </div>
-                
                 </li>
                 <li>
                     <div class="icon_link">
@@ -120,32 +125,55 @@
         <section class="home-section">
             <nav class="home-content">
                 <i class="bx bx-menu"></i>
-                <span class="text">Product Listings</span>
+                <span class="text">Adoption Detail</span>
             </nav>
-            <div class = "search">
-                <form>
-                    <input type = "text" placeholder = "Search"name = "searchbar">
-                </form>
-            </div>
-            <div class = "samoyed-box">
-                <div class = "samoyed-container">
-                    <img src = "Assets/Image/Samoyed (1).jpg" alt = "Samoyed">
-                    <ul>
-                        <li><a href = "#">Name: Chu Chu</a></li>
-                        <li><a href = "#">Breed: Samoyed</a></li>
-                        <li><a href = "#">Listing_id 123434555</a></li>
-                    </ul>
-                    <button class = "open" onclick = "openForm()">
-                        <i class='bx bx-dots-vertical-rounded'></i>
-                    </button>
-                    <div class = "form-popup" id = "myForm">
-                        <form  class = "form-container">
-                            <button type = "button" class = "more_info" onclick="window.location.href='productprofile.html'">More Info</button>
-                            <button type = "submit" class = "delete">Delete</button>
-                        </form>
+            <div class = "adopt_box">
+                <div class = "user_box">
+                    <h3 class = "user">User Information</h3>
+                    <div class = "user_info">
+                        <img src = "Assets/Image/lisa.png">
+                        <h3 class = "info">Information</h3>
+                        <ul>
+                            <li><a href = "#">Name: Lisa Simpson</a></li>
+                            <li><a href = "#">Age: 5</a></li>
+                            <li><a href = "#">Submission Date: 12/Nov/2023</a></li>
+                            <li><a href = "#">Email: lisasimp05@gamil.com</a></li>
+                            <li><a href = "#">Phone No: 09962782614</a></li>
+                            <li><a href = "#">Addres: 742 Evergreen Terrace, Springfield</a></li>
+                        </ul>
+                    </div>
+                    <div class = "living_sit">
+                        <h3 class = "living">Living Situation</h3>
+                        <ul>
+                            <li><a href = "#">Type of Residence: House with Garage</a></li>
+                            <li><a href = "#">Financial Situation: Middle Class Family</a></li>
+                        </ul>
+                    </div>
+                    <div class = "pet_info">
+                        <h3 class = "pet">Animal Information</h3>
+                        <img src = "Assets/Image/little.png">
+                        <h3 class = "santa">Information</h3>
+                        <ul>
+                            <li><a href = "#">Name: Santa Little Helper</a></li>
+                            <li><a href = "#">Breed: Greyhound</a></li>
+                            <li><a href = "#">Age: 2</a></li>
+                            <li><a href = "#">Gender: Male</a></li>
+                        </ul>
+                    </div>
+                    <div class = "reason">
+                        <h3 class = "reason_ad">Reasons For Adoption</h3>
+                        <ul>
+                            <li><a href = "#">Reason: Simpson Family want a dog</a></li>
+                            <li><a href = "#">Goals: Provide a good life for the dog</a></li>
+                        </ul>
+                    </div>
+                    <div class = "button">
+                        <button type = "button" class = "accept">Accept</button>
+                        <button type = "button" class = "reject">Reject</button>
                     </div>
                 </div>
             </div>
+        </section>
         <script src = "Assets/JS/script.js"></script>
     </body>
 </html>
