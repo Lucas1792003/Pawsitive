@@ -203,6 +203,8 @@
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    position: relative;
+    right: 40px;
 }
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details .profile_name,
@@ -231,7 +233,8 @@
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: #fff;
+    background-color: #fdfcfc;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
@@ -263,13 +266,17 @@
 .search i{
     
 } */
+
 .search{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 10%;
 
+}
+.samoyed{
+    display: flex;
 }
 form{
     border-radius: 25px;
@@ -280,9 +287,9 @@ form{
     width: 100%;
     height: 100%;
     display: block;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
-    padding: 8px 40px 8px 20px;
+    padding: 2px 40px 2px 20px;
     border: none;
     box-shadow: 0 5px 8px 3px black;
 }
@@ -318,7 +325,9 @@ form{
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: 70px;
+    margin-top: 200px;
     margin-right: 70px;
+    width: 100%;
     box-shadow: #000 0px 0px 2px;
 }
 .samoyed-container img{
@@ -360,9 +369,9 @@ form{
     display: none;
     position: fixed;
     bottom: 280px; 
-    right: 140px;
+    right: 120px;
     border: 1px solid black; 
-    bottom: 300px;
+    bottom: 400px;
     background-color: #f1f1f1;
 }
 .form-container{

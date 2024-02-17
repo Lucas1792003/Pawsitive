@@ -204,6 +204,8 @@
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    position: relative;
+    right: 30px;
 }
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details .profile_name,
@@ -933,5 +935,111 @@
     background-color: red;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/*application details */
+.user-box{
+    display: flex;
+}
+.user-detail{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2px solid black;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+.user-detail img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+.user-head{
+    position:relative;
+    left: 400px;
+    border-bottom: 1px solid black;
+    width: 17%;
+}
+.user-info{
+    position: absolute;
+    right: 400px;
+    top: 200px;
+}
+.user-info ul{
+    list-style: none;
+}
+.user-info li{
+    margin: 10px 0;
+}
+.user-info a{
+    text-decoration: none;
+    color: #1c1c6b;
+    font-size: 17px;
+}
+.order-detail{
+    padding-top: 100px;
+}
+.order-head{
+    position: relative;
+    left: 420px;
+    bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 14%;
+}
+.order-detail img{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border-radius: 6px;
+}
+.order-info{
+    position: absolute;
+    right: 450px;
+    top:520px;
+}
+.order-info ul{
+    list-style: none;
+}
+.order-info li{
+    margin: 10px 0;
+}
+.order-info a{
+    text-decoration: none;
+    color: #1c1c6b;
+    font-size: 17px;
+}
+.app-button{
+    position: relative;
+    left: 400px;
+    padding-top: 100px;
+}
+.confirm{
+    background-color: rgb(27, 210, 27);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.app-cancel{
+    background-color: red;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: white;
+    margin-left: 10px;
     cursor: pointer;
 }

@@ -47,3 +47,10 @@ document.querySelector("#show-filter").addEventListener("click", function() {
 document.querySelector(".filter .close-btn").addEventListener("click", function() {
     document.querySelector(".filter").classList.remove("active");
 });
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}

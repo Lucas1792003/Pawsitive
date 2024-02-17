@@ -203,6 +203,8 @@
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    position: relative;
+    right: 40px;
 }
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details .profile_name,

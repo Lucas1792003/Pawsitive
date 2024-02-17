@@ -203,6 +203,8 @@
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
+    position: relative;
+    right: 40px;
 }
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details .profile_name,
@@ -441,7 +443,7 @@
     margin-right: 100px;
     width: 100%;
     border-radius: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 .user {
     position: relative;
@@ -450,6 +452,8 @@
 .user_box img{
     width: 200px;
     height: 200px;
+    position: relative;
+    top: 60px;
 }
 .info{
     position: absolute;
@@ -498,8 +502,8 @@
     padding-top: 100px;;
 }
 .pet_info img{
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
@@ -513,14 +517,14 @@
 }
 .santa{
     position: absolute;
-    right: 750px;
-    top: 550px;
+    right: 600px;
+    top: 580px;
     border-bottom: 1px solid black;
 }
 .pet_info ul{
     position: absolute;
-    right: 660px;
-    top: 590px;
+    right: 550px;
+    top: 650px;
 }
 .pet_info a{
     text-decoration: none;
@@ -537,7 +541,7 @@
 }
 .reason_ad{
     border-bottom: 1px solid black;
-    width: 25%;
+    width: 28%;
 }
 .reason ul{
     padding-top: 10px;
@@ -572,3 +576,175 @@
     color: white;
     margin-left: 10px;
 }
+.app{
+    padding-top: 100px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.app_head{
+    position: relative;
+    left: 350px;
+}
+.general{
+    padding-top: 30px;
+}
+.general-head{
+    padding-bottom: 20px;
+}
+.general a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.general li{
+    margin: 15px 0;
+}
+.general ul{
+    list-style-type:circle;
+}
+.lifestyle{
+    padding-top: 50px;
+}
+.lifestyle-head{
+    padding-bottom: 20px;
+}
+.lifestyle a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.lifestyle li{
+    margin: 15px 0;
+}
+.lifestyle ul{
+    list-style-type:circle;
+}
+.financial{
+    padding-top: 50px;
+}
+.financial-head{
+    padding-bottom: 20px;
+}
+.financial a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.financial li{
+    margin: 15px 0;
+}
+.financial ul{
+    list-style-type:circle;
+}
+.exp{
+    padding-top: 50px;
+}
+.exp-head{
+    padding-bottom: 20px;
+}
+.exp a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.exp li{
+    margin: 15px 0;
+}
+.exp ul{
+    list-style-type:circle;
+}
+.commit{
+    padding-top: 50px;
+}
+.commit-head{
+    padding-bottom: 20px;
+}
+.commit a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.commit li{
+    margin: 15px 0;
+}
+.commit ul{
+    list-style-type:circle;
+}
+.social{
+    padding-top: 50px;
+}
+.social-head{
+    padding-bottom: 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.social li{
+    margin: 15px 0;
+}
+.social ul{
+    list-style-type:circle;
+}
+.care{
+    padding-top: 50px;
+}
+.care-head{
+    padding-bottom: 20px;
+}
+.care a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.care li{
+    margin: 15px 0;
+}
+.care ul{
+    list-style-type:circle;
+}
+.compa{
+    padding-top: 50px;
+}
+.compa-head{
+    padding-bottom: 20px;
+}
+.compa a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.compa li{
+    margin: 15px 0;
+}
+.compa ul{
+    list-style-type:circle;
+}
+.follow{
+    padding-top: 50px;
+}
+.follow-head{
+    padding-bottom: 20px;
+}
+.follow a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.follow li{
+    margin: 15px 0;
+}
+.follow ul{
+    list-style-type:circle;
+}
+.why{
+    padding-top: 50px;
+}
+.why-head{
+    padding-bottom: 20px;
+}
+.why a{
+    text-decoration: none;
+    color: #1c1c6b;
+}
+.why li{
+    margin: 15px 0;
+}
+.why ul{
+    list-style-type:circle;
+}
+
+
