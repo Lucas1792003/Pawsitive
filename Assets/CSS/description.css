@@ -1,6 +1,5 @@
 .product_detail{
     display: flex;
-    /* flex-direction: column; */
     padding-top: 100px;
     padding-left: 80px;
 }
@@ -152,12 +151,10 @@
 .tipBreed{
     margin-right: 80px;
     margin-left: 80px;
-    /* margin-bottom: 300px; */
     border: 2px solid #ddd;
     border-radius: 10px; 
     padding: 10px;
     bottom: 10px;
-    /* background-color: #fff; */
     box-shadow: #000 0px 0px 2px;
 
 }
@@ -290,15 +287,7 @@
     /* z-index: 10000; */
     cursor: pointer;
 }
-/* .home-content > button{
-    left: 1150px;
-    background-color: red;
-}
-.home-content .tab button{
-    left: 1070px;
-    top: 8px;
-    background-color: #0571dddd;
-} */
+
 .home-content .LoginB {
     padding-top: 10px; /* Adjust the value as needed */
     background-color: red;
