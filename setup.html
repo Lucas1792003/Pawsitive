@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Seller | Pawsitive</title>
+        <link rel="stylesheet" href="Assets/CSS/setup.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href = "https://fonts.googlepis.com/css2?family=Monsterrat:wght@400;600&display=swap">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class = "sidebar">
+            <div class="logo-datails">
+                <i class="bx bxl-baidu"></i>
+                <span class="logo_name">Pawsitive</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="seller.html">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Dashboard</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="app_status.html">
+                            <i class='bx bx-edit-alt'></i>
+                            <span class="link_name">Status</span>
+                        </a>
+                    </div>
+                    <!-- <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Search</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="newlisting.html">
+                            <i class='bx bx-list-plus'></i>
+                            <span class="link_name">New Listing</span>
+                        </a>
+                        <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                    </div>
+                    <!-- <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Adoption</a></li>
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="#">Birds</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <div class = "icon_link">
+                        <a href = "adoption_user.html">
+                            <i class='bx bxs-dog'></i>
+                            <span class = "link_name">Adoption</span>
+                        </a>
+                    </div>
+                   
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="setup.html">
+                            <i class='bx bx-cog' ></i>
+                            <span class="link_name">Set Up Shop</span>
+                        </a>
+                        <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+                    </div>
+                    <!-- <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Rescue</a></li>
+                        <li><a href="#">Call</a></li>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul> -->
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class='bx bx-compass' ></i>
+                        <span class="link_name">Service</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Service</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-history' ></i>
+                        <span class="link_name">History</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">History</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-cog' ></i>
+                        <span class="link_name">Setting</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Setting</a></li>
+                        
+                    </ul>
+                </li>
+                <li> -->
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="Assets/Image/james.webp" alt="Profile">
+                        </div>
+                        
+                        <div class="name-job">
+                            <div class="profile_name">James</div>
+                            <div class="job">Seller</div>
+                        </div>
+                        <i class='bx bx-log-out' ></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <nav class="home-content">
+                <i class="bx bx-menu"></i>
+                <span class="text">Set Up Shop</span>
+            </nav>
+            <div class = "upload">
+                    <input type = "file" id = "fileInput">
+                        <label for = "fileInput">
+                        <i class='bx bx-upload' ></i><br>
+                        <a>Upload File</a>
+                        <div class = "upload-detail">
+                            <input type = "text" placeholder="Shop Name" class = "shop-name">
+                            <input type = "text" placeholder = "Price" class = "price">
+                            <input type = "text" placeholder="Shop Location" class = "location">
+                            <input type = "text" placeholder = "E-Mail" class = "email">
+                            <input type = "text" placeholder="Phone No" class = "phone-no">
+                            <input type = "text" placeholder="Business Hour" class = "time">
+                        </div>
+                        </label>
+                    
+            </div>
+            <div class = "upload-detail2">
+                <input type = "text" placeholder="About the seller" class = "about-seller">
+                <input type = "text" placeholder="Shop Description" class = "shop-description">
+            </div>
+            <div class = "upload-detail3">
+                <div class = "collapsible">
+                    <input type = "checkbox" id = "collapsible-head">
+                    <label for = "collapsible-head">Pet Breed type
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    
+                    <div class = "collapsible-text">
+                        <h2>About Breed</h2>
+                        <form>
+                            <input type = "checkbox" class = "dog">
+                                <a href = "#">Dog</a>
+                            </input>
+                            <input type = "checkbox" class = "cat">
+                                <a href = "#"class = "cat1" >Cat</a>
+                            </input>
+                            <input type = "checkbox" class = 'bird'>
+                                <a href = "#"class = "bird1">Bird</a>
+                            </input>
+                            <input type = "checkbox" class = "fish">
+                                <a href = "#"class = "fish1">Fish</a>
+                            </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "upload-detail4">
+                <div class = "health">
+                    <input type = "checkbox" id = "health-and-care">
+                    <label for = "health-and-care">Health And Care Information
+                        <i class='bx bx-chevron-right'></i>
+                    </label>
+                    <div class = "health-text">
+                        <h2>Package</h2>
+                        <form>
+                            <input type = "checkbox">
+                                <a href = "#">Vaccinated</a>
+                            </input>
+                            <input type = "checkbox"class = "dewormed">
+                                <a href = "#" class = "dewormed">Dewormed</a>
+                            </input>
+                            <input type = "checkbox" class = "checkup">
+                                <a href = "#" class = "checkup">Veterinary Checkup Performed</a><br>
+                            </input><br>
+                            <input type = "checkbox">
+                                <a href = "#" class = "kit">Puppy Starter Kit</a>
+                            </input>
+                            <input type = "checkbox">
+                                <a href = "#"class = "social">Puppy Socialization Started</a>
+                            </input>
+                            <input type = "checkbox">
+                                <a href = "#"class = "dna">AKC DNA Profile Tested</a>
+                            </input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "upload-detail5">
+                <button type = "button" class= "submit">Submit</button>
+                <button type = "button" class = "cancel">Cancel</button>
+            </div>
+            
+            
+            <!-- <div class = "upload-detail4">
+                <button class = "health-and-care">
+                    <p>Health and Care Information</p>
+                    <i class = "bx bx-chevron-down"></i>
+                </button>
+            </div> -->
+        </div>
+
+
+            <script src = "Assets/JS/seller.js"></script>
