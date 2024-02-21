@@ -215,12 +215,12 @@
 }
 .home-section{
     position: relative;
-    
     background: #ffffff;
     height: 100vh;
-    left: 260px;
-    width: calc(100% - 260px);
+    left: 250px;
+    width: calc(100% - 250px);
     transition: all 0.5s ease;
+    
 }
 .sidebar.close ~ .home-section{
     left: 78px;
@@ -466,25 +466,27 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    
     overflow: hidden;
 }
 .page-adoption .title{
     font-size: 40px;
     font-weight: 600;
     color: #000;
-    position: relative;
-    top: -25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
 }
 .page-adoption::before{
     content: '';
     position: absolute;
-    top:  10%;
+    top:  7%;
     left: 5%;
     right: 5%;
-    bottom: 15%;
+    bottom: 11%;
     z-index: -1; 
     border-radius: 24px;
     background: rgba(220, 220, 220, 0.7);
+    /* border: #000 solid 9px; */
 }
 .page-adoption .container{
     max-width: 950px;
@@ -631,8 +633,9 @@ input[type="radio"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-radius: 10%; */
+    /* border:#000 solid 5px; */
     background: #fff;
+    
 }
 
 .first-page .home-img {
@@ -662,9 +665,16 @@ input[type="radio"]{
     white-space: pre-line;
     line-height: 1.5;
 }
+
+
+.second-page {
+    position: relative;
+}
+
 .second-page .second-page-img {
     position: relative;
     overflow: hidden;
+    
 }
 
 .second-page .second-page-img img {
@@ -688,7 +698,7 @@ input[type="radio"]{
 }
 
 .second-page .second-sub-text {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 380;
     color: #fff;
     position: absolute;
@@ -711,9 +721,7 @@ input[type="radio"]{
         font-size: 25px;
     }
 }
-.second-page {
-    position: relative;
-}
+
 
 .center-shapes {
     display: flex;
@@ -725,8 +733,8 @@ input[type="radio"]{
 }
 
 .white-shape {
-    width: 260px;
-    height: 260px; 
+    width: 210px;
+    height: 210px; 
     background: #fff; 
     margin: 0 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -737,8 +745,8 @@ input[type="radio"]{
     justify-content: center;
 }
 .white-shape img {
-    width: 180px; 
-    height: 180px; 
+    width: 150px; 
+    height:150px;
     margin-bottom: 10px;            
 }
 
