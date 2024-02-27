@@ -101,9 +101,10 @@
     position: relative;
     border: 2px solid #ddd;
     /* bottom: -80px; */
-    margin-top: 200px;
+    margin-top: 70px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 50px;
     border-radius: 10px;
 
     box-shadow: #000 0px 0px 2px;
