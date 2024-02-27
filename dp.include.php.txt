@@ -1,0 +1,7 @@
+<?php
+//database spec
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "jaflix";
+?>

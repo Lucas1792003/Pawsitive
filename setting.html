@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -94,6 +95,7 @@
                 <i class="bx bx-menu"></i>
                 <span class="text">Setting</span>
             </nav>
+            <form action="insert_profile.php" method="post">
             <div class="container light-style flex-grow-1 container-p-y">
                 <h4 class="font-weight-bold py-3 mb-4">
                     Account settings
@@ -125,7 +127,7 @@
                                         <div class="media-body ml-4">
                                             <label class="btn btn-outline-primary">
                                                 Upload new photo
-                                                <input type="file" class="account-settings-fileinput">
+                                                <input type="file" name="choosefile" class="account-settings-fileinput">
                                             </label> &nbsp;
                                             <button type="button" class="btn btn-default md-btn-flat">Reset</button>
                                             <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
@@ -135,15 +137,19 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label class="form-label">Username</label>
-                                            <input type="text" class="form-control mb-1" value="Samanthar">
+                                            <input type="text" class="form-control mb-1" 
+                                            id="username" name="username" for="username"
+                                            placeholder="e.g Samanthar">
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Name</label>
-                                            <input type="text" class="form-control" value="Samanthar Willson">
+                                            <input type="text" class="form-control" id="name" name="name" for="name"
+                                            placeholder="e.g Samanthar">
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">E-mail</label>
-                                            <input type="text" class="form-control mb-1" value="Samanthar@gmail.com">
+                                            <input type="text" class="form-control mb-1" id="email" name="email" for="email"
+                                            placeholder="e.g Samanthar@gmail.com">
                                             <div class="alert alert-warning mt-3">
                                                 Your email is not confirmed. Please check your inbox.<br>
                                                 <a href="javascript:void(0)">Resend confirmation</a>
@@ -151,7 +157,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Status</label>
-                                            <input type="text" class="form-control" value="Beginner">
+                                            <input type="text" class="form-control" id="status" name="status" for="status"
+                                            placeholder="e.g 1 or 2 or 3">
                                         </div>
                                     </div>
                                 </div>
@@ -315,10 +322,11 @@
                     </div>
                 </div>
                 <div class="text-right mt-3">
-                    <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+                    <button onclick="window.location.href='insert_profile.php'" type="submit" name="uploadfile" class="btn btn-primary">Save changes</button>&nbsp;
                     <button type="button" class="btn btn-default">Cancel</button>
                 </div>
             </div>
+            </form>
         </section>
         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
